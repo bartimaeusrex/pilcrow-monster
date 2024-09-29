@@ -1,0 +1,102 @@
+body {
+  margin: 40px 0 0 40px;
+  font-family: 'EB Garamond', serif;
+  font-size:1em;
+  background-color: white;
+}
+
+a {
+  text-underline-offset: .5em;
+  text-decoration:underline dashed 000;
+  color: #000;
+}
+
+img {
+  width:100%;
+  border:double solid #000;
+  margin:1em 0;
+}
+
+#title,
+#title a {
+  color:rgb(223, 11, 11);
+  font-family: 'Press Start 2P', cursive;
+  font-size:1.25rem;
+  text-decoration: none;
+  background-color: white;
+  position:sticky;
+  left:40px;
+  top:40px;
+  padding:5px 0px;
+  width:min-content;
+}
+
+.content {
+  margin:40px 0 40px 20px;
+  width:36em;
+  line-height:1.5em;
+}
+
+.content a {
+  background-color: rgba(255, 240, 155, 0.3);
+}
+
+.content p::before {
+  content:"¶ ";
+}
+
+.content::after {
+  font-size:2em;
+  content:"⁜";
+}
+
+.content p::first-line {
+  color:rgb(224, 18, 18);
+  /* text-indent:2em; */
+  text-transform:uppercase;
+}
+
+@media (max-width:700px) {
+  .content {
+    width: 90%;
+    margin-right:40px;
+    margin-left:auto;
+  }
+}
+
+.inwhich {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  margin-top:1em;
+  width:85%;
+  font-style:italic;
+}
+
+.inwhich::first-line {
+  text-transform:capitalize;
+}
+
+.date {
+  /* margin:2em 2em; */
+  text-transform:uppercase;
+  background-color: rgba(255, 221, 221, 0.4);
+  font-weight:600;
+  font-size:0.8em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.date::before {
+  content:"🡆 ";
+  font-size:1rem;
+}
+
+.date::after {
+  content:" 🡄";
+  font-size:1rem;
+}
+
+.asterism {
+  text-align:center;
+  margin-bottom:1em;
+}
