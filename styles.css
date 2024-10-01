@@ -1,14 +1,20 @@
+:root {
+  --bg-color: #f1ede8ff;
+}
+
 body {
-  margin: 40px 0 0 40px;
+  margin: 2em 0 0 2em;
   font-family: 'EB Garamond', serif;
   font-size:1em;
-  background-color: white;
+  background-color: var(--bg-color);
 }
 
 a {
-  text-underline-offset: .5em;
-  text-decoration:underline dashed 000;
-  color: #000;
+  /*text-underline-offset: .25em;
+  text-decoration:underline dashed #666;*/
+  color: #000000;
+  text-decoration:none;
+  background-color: var(--bg-color);
 }
 
 img {
@@ -23,7 +29,7 @@ img {
   font-family: 'Press Start 2P', cursive;
   font-size:1.25rem;
   text-decoration: none;
-  background-color: white;
+  background-color: var(--bg-color);
   position:sticky;
   left:40px;
   top:40px;
@@ -32,7 +38,7 @@ img {
 }
 
 .content {
-  margin:40px 0 40px 20px;
+  margin:2em 0 2em 1em;
   width:36em;
   line-height:1.5em;
 }
@@ -59,7 +65,7 @@ img {
 @media (max-width:700px) {
   .content {
     width: 90%;
-    margin-right:40px;
+    margin-right:2em;
     margin-left:auto;
   }
 }
@@ -86,17 +92,22 @@ img {
   font-family: 'Press Start 2P', cursive;
 }
 
-.date::before {
-  content:"🡆 ";
+.date a {
+  background-color: red;
+}
+
+.blurb::after {
+  content:"";
   font-size:1rem;
 }
 
-.date::after {
-  content:" 🡄";
-  font-size:1rem;
+a .blurb {
+  text-decoration:none;
+  background-color: var(--bg-color);
 }
 
 .asterism {
   text-align:center;
   margin-bottom:1em;
+ /* content:"⁂"; */
 }
