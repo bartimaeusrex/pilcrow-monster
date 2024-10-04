@@ -7,6 +7,10 @@ body {
   font-family: 'EB Garamond', serif;
   font-size:1em;
   background-color: var(--bg-color);
+/*  background-image: url(images/page_bg.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-blend-mode:normal; */
 }
 
 a {
@@ -17,10 +21,26 @@ a {
   background-color: var(--bg-color);
 }
 
+.source {
+  font-size:.75em;
+  text-align:right;
+  margin:-2em 0 1em 3em;
+  padding:0;
+}
+
 img {
   width:100%;
   border:double solid #000;
   margin:1em 0;
+}
+
+p {
+  margin:15px 0 0 0;
+}
+
+.gray {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 #title,
@@ -35,6 +55,7 @@ img {
   top:40px;
   padding:5px 0px;
   width:min-content;
+  z-index:3;
 }
 
 .content {
@@ -47,8 +68,16 @@ img {
   background-color: rgba(255, 240, 155, 0.3);
 }
 
-.content p::before {
+.article p {
+  text-indent:1.25em;
+}
+
+.firstpara::before {
   content:"¶ ";
+}
+
+p.firstpara {
+  text-indent:0;
 }
 
 .content::after {
@@ -56,9 +85,8 @@ img {
   content:"⁜";
 }
 
-.content p::first-line {
+.article::first-line {
   color:rgb(224, 18, 18);
-  /* text-indent:2em; */
   text-transform:uppercase;
 }
 
@@ -94,6 +122,10 @@ img {
 
 .date a {
   background-color: red;
+}
+
+.blurb {
+  margin-bottom:2em;
 }
 
 .blurb::after {
