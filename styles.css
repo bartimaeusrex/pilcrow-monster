@@ -28,10 +28,21 @@ a {
   padding:0;
 }
 
+.center-this {
+  margin: 0 auto;
+  text-align:center;
+}
+
 img {
   width:100%;
   border:double solid #000;
   margin:1em 0;
+}
+
+.stars {
+  height:4em;
+  width:10em;
+  padding-bottom:2em;
 }
 
 p {
@@ -143,3 +154,9 @@ a .blurb {
   margin-bottom:1em;
  /* content:"⁂"; */
 }
+
+.logo_pm {
+  height:3em;
+  width:3em;
+}
+
