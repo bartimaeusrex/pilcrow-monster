@@ -39,6 +39,34 @@ img {
   margin:1em 0;
 }
 
+.manicule {
+  width:2em;
+  margin:0;
+  padding: 0;
+  position:relative;
+  top:.25em;
+}
+
+.img-1em {
+  width:1em;
+}
+
+.img-2em {
+  width:2em;
+}
+
+.img-4em {
+  width:4em;
+}
+
+.img-8em {
+  width:8em;
+}
+
+.img-16em {
+  width:16em;
+}
+
 .stars {
   height:4em;
   width:10em;
@@ -75,8 +103,15 @@ p {
   line-height:1.5em;
 }
 
-.content a {
+/* .content a {
+  background-color: var(--bg-color);
+}
+  */
+
+.highlighter {
   background-color: rgba(255, 240, 155, 0.3);
+  text-decoration:underline solid orange;
+  text-underline-offset: .25em;
 }
 
 .article p {
@@ -92,8 +127,9 @@ p.firstpara {
 }
 
 .content::after {
-  font-size:2em;
-  content:"⁜";
+  font-size:.75em;
+  font-family: 'Press Start 2P', cursive;
+  content:"© reinhart mmxxiv";
 }
 
 .article::first-line {
@@ -160,3 +196,14 @@ a .blurb {
   width:3em;
 }
 
+.img-flex-lineup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    margin:0;
+    max-width: 700px;
+    gap:0;
+  }
