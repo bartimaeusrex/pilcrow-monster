@@ -1,0 +1,708 @@
+
+<html>
+  <!--
+
+YEP. FROM 2000. Trying to figure out how I got that simple effet to click 
+on an album and expand it to show the tracks... CSS? JS?... Confused.
+Goddam how much I used to know.
+
+
+    ____    ____      ____   
+        (  _ \  (  _ \    (  _ \	Pat@frodo.net
+     '99-'00   )___/   )(_) )    )   /	HerrToad@yahoo.com
+              (__)()  (____/()  (_)\_)()
+  
+    Thanks to Reinhard Zierke and his magnificent web page to be found at:
+      http://www.informatik.uni-hamburg.de/~zierke/steeleye.span/
+    Thank you.
+  --> 
+  <head>
+    
+  
+  <style>
+    body{background: url(/web/20010221103923im_/http://drwho58.tripod.com/logo.jpg) fixed right center no-repeat white;}
+    a{border:none;}
+    a:hover{text-decoration:none; color: orange}
+    a:text{size:5; text-decoration:none;}
+    a:link{size:7; text-decoration:none; color:green;}
+    a:vlink{size:7; text-decoration:none;}
+    a:alink{size:7; text-decoration:none;}
+    #glowtext{filter:glow(color=FFFF00,strength=5);width:100%;}
+    P {background-color: lightyellow; border: double black 3px;}
+    #s1{z-index:0; position:absolute; top:90; left:15; width:450; height:290; overflow:hidden; border:0px;}
+    #ring{position:absolute; top:10; left:475;}
+    #notes1{position:absolute; top:415; left:415;}
+    #notes2{position:absolute; top:415; left:15;}
+    #scroll1{position:absolute; z-index:1; top:80; left:395;}
+     #scroll2{position:absolute; z-index:1; top:205; left:475;}
+    #scroll3{position:absolute; z-index:1; top:50; left:395;}
+    #border1{position:absolute; z-index:2; top:60; left:65;}
+    #border2{position:absolute; z-index:2; top:360; left:65; filter:flipv();}
+  </style>
+    <title>Steeleye Span - Lyrics</title>
+  <link rel="SHORTCUT ICON" href="https://web.archive.org/web/20010221103923im_/http://drwho58.tripod.com/face.ico">
+  <!-- ####Frame Scroller -->
+  <script>
+  var sRepeat=null
+  function doScrollerIE(dir, src, amount) {
+    if (amount==null) amount=10
+    // Move the top of the contents up or down
+    // in the viewport
+    if (dir=="up")
+      document.all[src].scrollTop-=amount
+    else
+      document.all[src].scrollTop+=amount
+  
+    // Check if to repeat
+    if (sRepeat==null)
+      sRepeat = setInterval("doScrollerIE('" + dir + "','" + src + "'," + amount + ")",100)
+    return false
+  }
+  
+  // Used to end repeating scrolling
+  window.document.onmouseup = new Function("clearInterval(sRepeat);sRepeat=null")
+  window.document.ondragstart = new Function("return false")
+  </script>
+  
+  <!-- ####End Frame Scroll | Start Pop-up -->
+  <script language="JavaScript">
+  <!-- Begin
+  function popUp(URL) {
+  day = new Date();
+  id = day.getTime();
+  eval("page" + id + " = window.open(URL, '" + id + "', 'toolbars=0, scrollbars=1, location=0, statusbars=0, menubars=0, resizable=0, width=550, height=400, top=40');");
+  }
+  // End --></script>
+  </head>
+  <body link="#ff0000" vlink="#4e4e4e" scroll="no">
+    
+
+
+
+    <font size="6" color="green" face="Celtic Gaelige, viner hand itc"><b>
+    <span id="glowtext">STEELEYE SPAN LYRICS</span></font></b>
+  <!-- ##### FRAME ###### -->
+  <div id="s1"><br>
+  <font size="2" color="888888"><i>(Click an album for drop-down menu of songs.)</i></font>
+  <a name="top"></a>
+  <ol type="I" start="-1" style="cursor: default">
+  <li><b><a href="javascript:popUp('ss/history.html')">History - by Maddy Prior</a></b>
+  
+  
+  <li><b id="Out0" class="Outline" style="cursor: hand">
+    The Band's many contributors:</b>
+    <div id="Out0details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li> <b>Maddy Prior</b>: Vocals, 
+      <li> <b>Tim Hart</b>: Vocals, Dulcimer, Guitar
+      <li> <b>Liam Genocky</b>: Drums, Percussion
+      <li> <b>Nigel Pegrum</b>: Drums, Percussion, Woodwind
+      <li> <b>Gay Woods</b>: Vocals, Concertina
+      <li> <b>Terry Woods</b>: Vocal, Guitar, Mandolin
+      <li> <b>Peter Knight</b>: Vocals, Fiddle, Banjo, Mandolin
+      <li> <b>John Kirkpatrick</b>: Vocals, Button Accordion, Concertina
+      <li> <b>Rick Kemp</b>: Vocals, Bass
+      <li> <b>Bob Johnson</b>: Vocals, Guitar
+      <li> <b>Ashley Hutchings</b>: Vocals, Bass
+      <li> <b>Tim Harries</b>: Vocals, Bass 
+      <li> <b>Martin Carthy</b>: Vocals, Guitar
+      <li> <b>Chris Staines</b>: Bass
+      <li> <b>Mark Williamson</b>: Bass
+      <li> <b>David Bowie</b>: Alto Sax (Now We Are Six)
+      <li> <b>Gerry Conway</b>: Drums (Hark!)
+      <li> <b>Vince Cross</b>: DX7 (Back In Line)
+      <li> <b>Martin Ditchum</b>: extra Percussion (Tempted &amp; Tried)
+      <li> <b>Dave Mattacks</b>: Drums (Hark!, Horkstow Grange &amp; Bedlam Born)
+      <li> <b>The St. Eleye Primary School Junior Choir</b>: Vocals (Now We Are Six)
+      <li> <b>Peter Sellers</b>: Ukelele (Commoner's Crown)
+      </ol>
+  </div><br>
+  
+  <li><b id="Out1" class="Outline" style="cursor:hand">
+    Hark! The Village Wait! (1970)</b>
+    <div id="Out1details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004625_0101_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#calling')"> A Calling-On Song</a> [1:13]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004625_0102_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#blacksmith')"> The Blacksmith</a> [3:41]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004625_0103_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#fishermans')"> Fisherman's Wife</a> [3:12]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004625_0104_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#blackleg')"> Blackleg Miner</a> [2:46]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004625_0105_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#dark')"> Dark-Eyed Sailor</a> [5:59]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a06.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#copshawholme')"> Copshawholme Fair</a> [2:35]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a07.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#all')"> All Things Are Quite Silent</a> [2:38]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a08.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#hills')"> The Hills of Greenmore</a> [4:02]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a09.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#my')"> My Johnny was a Shoemaker</a> [1:11]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a10.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#lowlands')"> Lowlands of Holland</a> [6:00]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a11.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#twa')"> Twa Corbies </a>[2:06]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179522000a12.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/hark.htm#one')"> One Night as I Lay on My Bed</a> [3:30]
+      </ol>
+    </div><br>
+  
+  <li><b id="Out2" class="Outline" style="cursor:hand">
+    Please To See The King (1971)</b>
+    <div id="Out2details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004635_0101_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#blacksmith')"> The Blacksmith</a> [4:49]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004635_0102_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#cold')"> Cold, Haily, Windy Night</a> [4:37]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004635_0103_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#jigs')"> Jigs: Brian O'Lynn/The Hag with the Money</a> [3:21]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004635_0104_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#prince')"> Prince Charlie Stuart</a> [4:17]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~hh-600007/0004635_0105_00_0002.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#boys')"> Boys of Bedlam</a> [4:22]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179752000a06.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#false')"> False Knight on the Road</a> [2:45]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179752000a07.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#lark')"> The Lark in the Morning</a> [4:33]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179752000a08.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#female')"> Female Drummer</a> [4:05]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179752000a09.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#king')"> The King</a> [1:31]
+      <li>
+    <a href="https://web.archive.org/web/20010221103923/http://www.buy.com/buy_player/hurlPNM.exe?/buymusic/~i-600007/1635179752000a10.ra"><img src="/web/20010221103923im_/http://drwho58.tripod.com/sound.gif" border="0"></a>
+      <a href="javascript:popUp('ss/please.htm#lovely')"> Lovely on the Water</a> [5:20]
+      <li> (CD) <a href="javascript:popUp('ss/please.htm#rave')">Rave On</a> [1:24]
+      </ol>
+    </div><br>
+  
+  <li><b id="Out3" class="Outline" style="cursor:hand">
+    Ten Man Mop Or Mr Reservoir Butler Rides Again (1971)</b>
+    <div id="Out3details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/ten.htm#gower')"> Gower Wassail</a> [5:28]
+      <li><a href="javascript:popUp('ss/ten.htm#jigs')"> Jigs: Paddy Clancy's Jig / Willie Clancy's Fancy</a> [3:11]
+      <li><a href="javascript:popUp('ss/ten.htm#four')"> Four Nights Drunk</a> [3:06]
+      <li><a href="javascript:popUp('ss/ten.htm#when')"> When I Was On Horseback</a> [6:13]
+      <li><a href="javascript:popUp('ss/ten.htm#marrowbones')"> Marrowbones</a> [4:28]
+      <li><a href="javascript:popUp('ss/ten.htm#captain')"> Captain Coulston</a> [5:06]
+      <li><a href="javascript:popUp('ss/ten.htm#reels')"> Reels: Dowd's Favourite / £10 Float / The Morning Dew</a> [3:47]
+      <li><a href="javascript:popUp('ss/ten.htm#wee')"> Wee Weaver</a> [2:41]
+      <li><a href="javascript:popUp('ss/ten.htm#skewball')">Skewball</a> [3:31]
+      </ol></div><br>
+  <li><b id="Out4" class="Outline" style="cursor:hand">
+    Below The Salt (1972)</b>
+    <div id="Out4details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/below.htm#spotted')"> Spotted Cow</a> [3:06]
+      <li><a href="javascript:popUp('ss/below.htm#rosebud')"> Rosebud In June</a> [3:42]
+      <li><a href="javascript:popUp('ss/below.htm#jigs')"> Jigs: The Bride's Favourite / Tansey's Fancy</a> [3:10]
+      <li><a href="javascript:popUp('ss/below.htm#sheep')"> Sheep-Crook And Black Dog</a> [4:44]
+      <li><a href="javascript:popUp('ss/below.htm#royal')"> Royal Forester</a> [4:34]
+      <li><a href="javascript:popUp('ss/below.htm#king')"> King Henry</a> [7:10]
+      <li><a href="javascript:popUp('ss/below.htm#gaudete')"> Gaudete</a> [2:25]
+      <li><a href="javascript:popUp('ss/below.htm#john')"> John Barleycorn</a> [4:48]
+      <li><a href="javascript:popUp('ss/below.htm#saucy')"> Saucy Sailor</a> [5:48]
+      </ol></div><br>
+  <li><b id="Out5" class="Outline" style="cursor:hand">
+    Parcel of Rogues (1973)</b>
+    <div id="Out5details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/parcel.htm#one')"> One Misty Moisty Morning</a> [3:32]
+      <li><a href="javascript:popUp('ss/parcel.htm#alison')"> Alison Gross</a> [5:29]
+      <li><a href="javascript:popUp('ss/parcel.htm#bold')"> The Bold Poachers</a> [4:19]
+      <li><a href="javascript:popUp('ss/parcel.htm#ups')"> The Ups And Downs</a> [2:46]
+      <li><a href="javascript:popUp('ss/parcel.htm#robbery')"> Robbery With Violins</a> [1:47]
+      <li><a href="javascript:popUp('ss/parcel.htm#wee')"> The Wee Wee Man</a> [4:02]
+      <li><a href="javascript:popUp('ss/parcel.htm#weaver')"> The Weaver And The Factory Maid</a> [5:21]
+      <li><a href="javascript:popUp('ss/parcel.htm#rogues')"> Rogues In A Nation</a> [4:35]
+      <li><a href="javascript:popUp('ss/parcel.htm#cam')"> Cam Ye O'er Frae France</a> [2:49]
+      <li><a href="javascript:popUp('ss/parcel.htm#hares')"> Hares On The Mountain</a> [4:35]
+      </ol></div><br>
+  <li><b id="Out6" class="Outline" style="cursor:hand">
+    Now We Are Six (1974)</b>
+    <div id="Out6details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/now.htm#thomas')"> Thomas The Rhymer</a> [3:15]
+      <li><a href="javascript:popUp('ss/now.htm#two')"> Two Magicians</a> [4:23]
+      <li><a href="javascript:popUp('ss/now.htm#edwin')"> Edwin</a> [4:40]
+      <li><a href="javascript:popUp('ss/now.htm#twinkle')"> Twinkle Little Star</a> [1:32]
+      <li><a href="javascript:popUp('ss/now.htm#seven')"> Seven-Hundred Elves</a> [5:11]
+      <li><a href="javascript:popUp('ss/now.htm#mooncoin')"> Mooncoin Jig</a> [3:50]
+      <li><a href="javascript:popUp('ss/now.htm#drink')"> Drink Down The Moon</a> [6:21]
+      <li><a href="javascript:popUp('ss/now.htm#long')"> Long-a-Growing</a> [2:17]
+      <li><a href="javascript:popUp('ss/now.htm#now')"> Now We Are Six</a> [4:02]
+      <li><a href="javascript:popUp('ss/now.htm#to')"> To Know Him Is To Love Him</a> [2:40]
+      </ol></div><br>
+  <li><b id="Out7" class="Outline" style="cursor:hand">
+    Commoner's Crown (1975)</b>
+    <div id="Out7details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/commoners.htm#little')"> Little Sir Hugh</a> [4:44]
+      <li><a href="javascript:popUp('ss/commoners.htm#bach')"> Bach Goes To Limerick</a> [3:40]
+      <li><a href="javascript:popUp('ss/commoners.htm#long')"> Long Lankin</a> [8:38]
+      <li><a href="javascript:popUp('ss/commoners.htm#dogs')"> Dogs and Ferrets</a> [2:44]
+      <li><a href="javascript:popUp('ss/commoners.htm#galtee')"> Galtee Farmer</a> [3:43]
+      <li><a href="javascript:popUp('ss/commoners.htm#demon')"> Demon Lover</a> [5:55]
+      <li><a href="javascript:popUp('ss/commoners.htm#elf')"> Elf Call</a> [3:56]
+      <li><a href="javascript:popUp('ss/commoners.htm#weary')"> Weary Cutters</a> [2:04]
+      <li><a href="javascript:popUp('ss/commoners.htm#new')"> New York Girls</a> [3:01]
+      </ol></div><br>
+  <li><b id="Out8" class="Outline" style="cursor:hand">
+    All Around My Hat (1975)</b>
+    <div id="Out8details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/all.htm#black')"> Black Jack Davy</a> [4:15]
+      <li><a href="javascript:popUp('ss/all.htm#hard')"> Hard Times of Old England</a> [5:10]
+      <li><a href="javascript:popUp('ss/all.htm#cadgwith')"> Cadgwith Anthem</a> [2:45]
+      <li><a href="javascript:popUp('ss/all.htm#all')"> All Around My Hat</a> [4:06]
+      <li><a href="javascript:popUp('ss/all.htm#gamble')"> Gamble Gold (Robin Hood)</a> [3:40]
+      <li><a href="javascript:popUp('ss/all.htm#wife')"> The Wife of Ushers Well</a> [4:32]
+      <li><a href="javascript:popUp('ss/all.htm#sum')"> Sum Waves (Tunes)</a> [4:00]
+      <li><a href="javascript:popUp('ss/all.htm#dance')"> Dance With Me</a> [3:51]
+      <li><a href="javascript:popUp('ss/all.htm#batchelors')"> Batchelor's Hall</a> [5:45]
+      </ol></div><br>
+  <li><b id="Out9" class="Outline" style="cursor:hand">
+    Rocket Cottage (1976)</b>
+    <div id="Out9details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/rocket.htm#london')"> London</a> [4:14]
+      <li><a href="javascript:popUp('ss/rocket.htm#bosnian')"> The Bosnian Hornpipes</a> [0:58]
+      <li><a href="javascript:popUp('ss/rocket.htm#orfeo')"> Orfeo/Nathan's Reel</a> [6:01]
+      <li><a href="javascript:popUp('ss/rocket.htm#twelve')"> The Twelve Witches</a> [4:32]
+      <li><a href="javascript:popUp('ss/rocket.htm#brown')"> The Brown Girl</a> [5:06]
+      <li><a href="javascript:popUp('ss/rocket.htm#fighting')"> Fighting For Strangers</a> [4:26]
+      <li><a href="javascript:popUp('ss/rocket.htm#sligo')"> Sligo Maid</a> [3:44]
+      <li><a href="javascript:popUp('ss/rocket.htm#sir')"> Sir James The Rose</a> [6:16]
+                  <li><a href="javascript:popUp('ss/rocket.htm#camptown')"> The Camptown Races</a> [2:11]
+      <li><a href="javascript:popUp('ss/rocket.htm#drunkard')"> The Drunkard</a> [5:44]
+      </ol></div><br>
+  <li><b id="Out10" class="Outline" style="cursor:hand">
+    Storm Force Ten (1977)</b>
+    <div id="Out10details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/storm.htm#awake')"> Awake, Awake</a> [5:06]
+      <li><a href="javascript:popUp('ss/storm.htm#sweep')"> Sweep, Chimney Sweep</a> [4:45]
+      <li><a href="javascript:popUp('ss/storm.htm#wife')"> The Wife of the Soldier</a> [2:40]
+      <li><a href="javascript:popUp('ss/storm.htm#victory')"> The Victory</a> [8:37]
+      <li><a href="javascript:popUp('ss/storm.htm#black')"> The Black Freighter</a> [5:59]
+      <li><a href="javascript:popUp('ss/storm.htm#some')"> Some Rival</a> [3:23]
+      <li><a href="javascript:popUp('ss/storm.htm#treadmill')"> Treadmill Song</a> [6:12]
+      <li><a href="javascript:popUp('ss/storm.htm#seventeen')"> Seventeen Come Sunday</a> [5:08]
+                  </ol></div><br>
+  <li><b id="Out11" class="Outline" style="cursor:hand">
+    Live! At Last (1978)</b>
+    <div id="Out11details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/live.htm#atholl')"> The Atholl Highlanders/Walter Bulwer's Polka</a> [5:08]
+      <li><a href="javascript:popUp('ss/live.htm#saucy')"> Saucy Sailor/Black Freighter</a> [9:50]
+      <li><a href="javascript:popUp('ss/live.htm#maid')"> The Maid and the Palmer</a> [6:37]
+      <li><a href="javascript:popUp('ss/live.htm#hunting')"> Hunting the Wren</a> [3:09]
+      <li><a href="javascript:popUp('ss/live.htm#montrose')"> Montrose</a> [15:16]
+      <li><a href="javascript:popUp('ss/live.htm#bonnets')"> Bonnets So Blue</a> [3:30]
+      <li><a href="javascript:popUp('ss/live.htm#false')"> The False Knight on the Road</a> [6:09]
+      </ol></div><br>
+  <li><b id="Out12" class="Outline" style="cursor:hand">
+    Sails of Silver (1980)</b>
+    <div id="Out12details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/sails.htm#sails')"> Sails of Silver</a> [3:27]
+      <li><a href="javascript:popUp('ss/sails.htm#love')"> My Love</a> [2:53]
+      <li><a href="javascript:popUp('ss/sails.htm#barnet')"> Barnet Fair</a> [4:34]
+      <li><a href="javascript:popUp('ss/sails.htm#senior')"> Senior Service</a> [3:31]
+      <li><a href="javascript:popUp('ss/sails.htm#gone')"> Gone To America</a> [4:21]
+      <li><a href="javascript:popUp('ss/sails.htm#where')"> Where Are They Now?</a> [4:11]
+      <li><a href="javascript:popUp('ss/sails.htm#let')"> Let Her Go Down</a> [3:36]
+      <li><a href="javascript:popUp('ss/sails.htm#longbone')"> Longbone</a> [3:58]
+      <li><a href="javascript:popUp('ss/sails.htm#marigold')"> Marigold/Harvest Home</a> [3:05]
+      <li><a href="javascript:popUp('ss/sails.htm#tell')"> Tell Me Why</a> [3:56]
+      <li>(bonus track)<a href="javascript:popUp('ss/sails.htm#thomas')"> Thomas the Rhymer</a> [6:50]
+      <li>(bonus)<a href="javascript:popUp('ss/sails.htm#johnny')"> My Johnny</a> [1:39]
+      <li>(bonus)<a href="javascript:popUp('ss/sails.htm#lark')"> The Lark In the Morning</a> [4:03]
+      </ol></div><br>
+  <li><b id="Out13" class="Outline" style="cursor:hand">
+    On Tour (1983)</b>
+    <div id="Out13details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/ontour.htm#king')"> The King</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#black')"> Black Jack Davy</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#sails')"> Sails of Silver</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#let')"> Let Her Go Down</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#alison')"> Alison Gross</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#live')"> I Live Not Where I Love</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#barnet')"> Barnet Fair</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#have')"> I Have A Wish</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#gone')"> Gone To America</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#longbone')"> Longbone</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#bach')"> Bach Goes To Limerick</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#little')"> Little Sir Hugh</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#thomas')"> Thomas The Rhymer</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#all')"> All Around My Hat</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#gaudete')"> Gaudete</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#royal')"> Royal Forester</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#sligo')"> Sligo Maid</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#cam')"> Cam Ye O'er Frae France</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#western')"> Western Movies</a>
+      <li><a href="javascript:popUp('ss/ontour.htm#deep')"> Deep In The Darkest Night</a>
+      </ol></div><br>
+  <li><b id="Out14" class="Outline" style="cursor:hand">
+    Back In Line (1986)</b>
+    <div id="Out14details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/back.htm#edward')"> Edward</a> [6:20]
+      <li><a href="javascript:popUp('ss/back.htm#isabel')"> Isabel</a> [5:22]
+      <li><a href="javascript:popUp('ss/back.htm#lady')"> Lady Diamond</a> [4:41]
+      <li><a href="javascript:popUp('ss/back.htm#cannon')"> Cannon by Telemann</a> [1:44]
+      <li><a href="javascript:popUp('ss/back.htm#peace')"> Peace On the Border</a> [4:23]
+      <li><a href="javascript:popUp('ss/back.htm#blackleg')"> Blackleg Miner</a> [4:06]
+      <li><a href="javascript:popUp('ss/back.htm#white')"> White Man</a> [4:39]
+      <li><a href="javascript:popUp('ss/back.htm#lanercost')"> Lanercost</a> [4:32]
+      <li><a href="javascript:popUp('ss/back.htm#scarecrow')"> Scarecrow</a> [4:13]
+      <li><a href="javascript:popUp('ss/back.htm#take')"> Take My Heart</a> [3:58]
+      </ol></div><br>
+  <li><b id="Out15" class="Outline" style="cursor:hand">
+    Portfolio (1988)</b>
+    <div id="Out15details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/portfolio.htm#dark')"> Dark-Eyed Sailor</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#boys')"> Boys of Bedlam</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#prince')"> Prince Charles Stuart</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#gaudete')"> Gaudete</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#saucy')"> Saucy Sailor</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#alison')"> Alison Gross</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#thomas')"> Thomas the Rhymer</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#long')"> Long Lankin</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#new')"> New York Girls</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#all')"> All Around My Hat</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#black')"> Black Jack Davy</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#fighitng')"> Fighting for Strangers</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#victory')"> The Victory</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#freighter')"> The Black Freighter</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#sligo')"> Sligo Maid</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#gone')"> Gone To America</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#let')"> Let Her Go Down</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#edward')"> Edward</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#white')"> White Man</a>
+      <li><a href="javascript:popUp('ss/portfolio.htm#cannon')"> A Cannon by Telemann</a>
+      </ol></div><br>
+  <li><b id="Out16" class="Outline" style="cursor:hand">
+    Tempted And Tried (1989)</b>
+    <div id="Out16details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/tempted.htm#jack')"> Jack Hall</a> [3:57]
+      <li><a href="javascript:popUp('ss/tempted.htm#two')"> Two Butchers</a> [4:49]
+      <li><a href="javascript:popUp('ss/tempted.htm#padstow')"> Padstow</a> [3:03]
+      <li><a href="javascript:popUp('ss/tempted.htm#reels')"> Reels</a> [2:48]
+      <li><a href="javascript:popUp('ss/tempted.htm#betsy')"> Betsy Bell &amp; Mary Gray</a> [4:59]
+      <li><a href="javascript:popUp('ss/tempted.htm#shaking')"> Shaking of the Sheets</a> [4:11]
+      <li><a href="javascript:popUp('ss/tempted.htm#searching')"> Searching for Lambs</a> [4:12]
+      <li><a href="javascript:popUp('ss/tempted.htm#seagull')"> Seagull</a> [2:41]
+      <li><a href="javascript:popUp('ss/tempted.htm#cruel')"> The Cruel Mother</a> [5:36]
+      <li><a href="javascript:popUp('ss/tempted.htm#following')"> Following Me</a> [3:38]
+      <li><a href="javascript:popUp('ss/tempted.htm#fox')"> The Fox</a> [3:02]
+      </ol></div><br>
+  <li><b id="Out17" class="Outline" style="cursor:hand">
+    The Best of &amp; The Rest of Steeleye Span (1990)</b>
+    <div id="Out17details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/best.htm#black')"> Blacksmith</a> [3:40]
+      <li><a href="javascript:popUp('ss/best.htm#prince')"> Prince Charlie Stuart</a> [4:16]
+      <li><a href="javascript:popUp('ss/best.htm#marrowbones')"> Marrowbones</a> [4:27]
+      <li><a href="javascript:popUp('ss/best.htm#reels')"> Reels</a> [3:46]
+      <li><a href="javascript:popUp('ss/best.htm#western')"> Western Wynde</a> [0:26]
+      <li><a href="javascript:popUp('ss/best.htm#dark')"> Dark-Eyed Sailor</a> [5:56]
+      <li><a href="javascript:popUp('ss/best.htm#all')"> All Things Are Quite Silent</a> [2:39]
+      <li><a href="javascript:popUp('ss/best.htm#rave')"> Rave On</a> [2:09]
+      <li><a href="javascript:popUp('ss/best.htm#lovely')"> Lovely On The Water</a> [5:20]
+      <li><a href="javascript:popUp('ss/best.htm#wee')"> Wee Weaver</a> [2:40]
+      <li><a href="javascript:popUp('ss/best.htm#brisk')"> The Brisk Young Butcher</a> [2:50]
+      <li><a href="javascript:popUp('ss/best.htm#boys')"> Boys of Bedlam</a> [4:19]
+      <li><a href="javascript:popUp('ss/best.htm#smith')"> The Blacksmith</a> [4:47]
+      <li><a href="javascript:popUp('ss/best.htm#johnny')"> My Johnny Was A Shoemaker</a> [1:10]
+      </ol></div><br>
+  <li><b id="Out18" class="Outline" style="cursor:hand">
+    Tonight's the Night, LIVE! (1991)</b>
+    <div id="Out18details" style="display:None; position:relative; left:18;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/tonights.htm#tonights')"> Tonight's The Night</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#ca')"> Ca The Ewes</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#gentleman')"> Gentleman Soldier</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#tam')"> Tam Lin</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#padstow')"> Padstow</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#fighting')"> Fighting For Strangers</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#white')"> White Man</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#weaver')"> The Weaver</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#ten')"> Ten Long Years</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#dawn')"> Dawn of The Day</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#cam')"> Cam Ye O'er Frae France</a>
+      <li><a href="javascript:popUp('ss/tonights.htm#all')"> All Around My Hat</a>
+      </ol></div><br>
+  <li><b id="Out19" class="Outline" style="cursor:hand">
+    Spanning the Years (1995)</b>
+    <div id="Out19details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/spanning.htm#blacksmith')"> The Blacksmith</a> [3:40]
+      <li><a href="javascript:popUp('ss/spanning.htm#johnny')"> My Johnny Was A Shoemaker</a> [1:11]
+      <li><a href="javascript:popUp('ss/spanning.htm#king')"> The King</a> [1:28]
+      <li><a href="javascript:popUp('ss/spanning.htm#lovely')"> Lovely On The Water</a> [5:19]
+      <li><a href="javascript:popUp('ss/spanning.htm#marrowbones')"> Marrowbones</a> [4:26]
+      <li><a href="javascript:popUp('ss/spanning.htm#rave')"> Rave On</a> [1:26]
+      <li><a href="javascript:popUp('ss/spanning.htm#gaudete')"> Gaudete</a> [2:26]
+      <li><a href="javascript:popUp('ss/spanning.htm#john')"> John Barleycorn</a> [4:48]
+      <li><a href="javascript:popUp('ss/spanning.htm#alison')"> Alison Gross</a> [5:26]
+      <li><a href="javascript:popUp('ss/spanning.htm#robbery')"> Robbery With Violins</a> [1:47]
+      <li><a href="javascript:popUp('ss/spanning.htm#rogues')"> Rogues In A Nation</a> [4:33]
+      <li><a href="javascript:popUp('ss/spanning.htm#cam')"> Cam Ye O'er Frae France</a> [2:47]
+      <li><a href="javascript:popUp('ss/spanning.htm#thomas')"> Thomas The Rhymer</a> [3:14]
+      <li><a href="javascript:popUp('ss/spanning.htm#know')"> To Know Him Is To Love Him</a> [2:43]
+      <li><a href="javascript:popUp('ss/spanning.htm#new')"> New York Girls</a> [3:08]
+      <li><a href="javascript:popUp('ss/spanning.htm#long')"> Long Lankin</a> [8:42]
+      <li><a href="javascript:popUp('ss/spanning.htm#black')"> Black Jack Davy</a> [4:15]
+      <li><a href="javascript:popUp('ss/spanning.htm#hard')"> Hard Times of Old England</a> [5:12]
+      <li><a href="javascript:popUp('ss/spanning.htm#all')"> All Around My Hat</a> [4:08]
+      <li><a href="javascript:popUp('ss/spanning.htm#london')"> London</a> [4:09]
+      <li><a href="javascript:popUp('ss/spanning.htm#fighting')"> Fighting For Strangers</a> [4:21]
+      <li><a href="javascript:popUp('ss/spanning.htm#black')"> The Black Freighter</a> [5:58]
+      <li><a href="javascript:popUp('ss/spanning.htm#victory')"> The Victory</a> [8:35]
+      <li><a href="javascript:popUp('ss/spanning.htm#false')"> The False Knight on The Road</a> [6:08]
+      <li><a href="javascript:popUp('ss/spanning.htm#rag')"> Rag Doll</a> [3:19]
+      <li><a href="javascript:popUp('ss/spanning.htm#let')"> Let Her Go Down</a> [3:37]
+      <li><a href="javascript:popUp('ss/spanning.htm#sails')"> Sails of Silver</a> [3:27]
+      <li><a href="javascript:popUp('ss/spanning.htm#gone')"> Gone To America</a> [4:22]
+      <li><a href="javascript:popUp('ss/spanning.htm#love')"> My Love</a> [2:54]
+      <li><a href="javascript:popUp('ss/spanning.htm#lady')"> Lady Diamond</a> [4:36]
+      <li><a href="javascript:popUp('ss/spanning.htm#blackleg')"> Blackleg Miner</a> [4:11]
+      <li><a href="javascript:popUp('ss/spanning.htm#one')"> One Misty, Moisty Morning</a> [4:38]
+      <li><a href="javascript:popUp('ss/spanning.htm#fox')"> The Fox</a> [3:05]
+      <li><a href="javascript:popUp('ss/spanning.htm#following')"> Following Me</a> [3:39]
+      <li><a href="javascript:popUp('ss/spanning.htm#tam')"> Tam Lin</a> [10:44]
+      </ol></div><br>
+  <li><b id="Out20" class="Outline" style="cursor:hand">
+    Time (1996)</b>
+    <div id="Out20details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/time.htm#prickly')"> The Prickly Bush</a> [6:03]
+      <li><a href="javascript:popUp('ss/time.htm#old')"> The Old Maid in the Garrett</a> [5:55]
+      <li><a href="javascript:popUp('ss/time.htm#harvest')"> Harvest of the Moon</a> [4:10]
+      <li><a href="javascript:popUp('ss/time.htm#underneath')"> Underneath Her Apron</a> [5:13]
+      <li><a href="javascript:popUp('ss/time.htm#cutty')"> Cutty Wren</a> [2:49]
+      <li><a href="javascript:popUp('ss/time.htm#go')"> Go From My Window</a> [5:17]
+      <li><a href="javascript:popUp('ss/time.htm#elf')"> The Elf Knight</a> [8:39]
+      <li><a href="javascript:popUp('ss/time.htm#water')"> The Water is Wide</a> [7:32]
+      <li><a href="javascript:popUp('ss/time.htm#you')"> You Will Burn</a> [4:53]
+      <li><a href="javascript:popUp('ss/time.htm#corbies')"> Corbies</a> [3:42]
+      <li><a href="javascript:popUp('ss/time.htm#song')"> The Song Will Remain</a> [4:14]
+      </ol></div><br>
+  <li><b id="Out30" class="Outline" style="cursor:hand">
+    THE KING the best of... Steeleye Span (1996)</b>
+    <div id="Out30details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="javascript:popUp('ss/king.htm#calling')"> A Calling Song</a> [1:15]
+      <li><a href="javascript:popUp('ss/king.htm#fishermans')"> Fisherman's Wife</a> [3:13]
+      <li><a href="javascript:popUp('ss/king.htm#copshawholme')"> Copshawholme Fair</a> [2:36]
+      <li><a href="javascript:popUp('ss/king.htm#all')"> All Things Are Quite Silent</a> [2:36]
+      <li><a href="javascript:popUp('ss/king.htm#my')"> My Johnny Was A Shoemaker</a> [1:10]
+      <li><a href="javascript:popUp('ss/king.htm#fly')"> Fly Up My Cock</a> [1:42]
+      <li><a href="javascript:popUp('ss/king.htm#twa')"> Twa Corbies</a> [2:05]
+      <li><a href="javascript:popUp('ss/king.htm#one')"> One Night As I Lay On My Bed</a> [3:30]
+      <li><a href="javascript:popUp('ss/king.htm#cold')"> Cold, Haily, Windy Night</a> [4:35]
+      <li><a href="javascript:popUp('ss/king.htm#prince')"> Prince Charlie Stuart</a> [4:15]
+      <li><a href="javascript:popUp('ss/king.htm#lark')"> The Lark In The Morning</a> [4:30]
+      <li><a href="javascript:popUp('ss/king.htm#king')"> The King</a>  [1:29]
+      <li><a href="javascript:popUp('ss/king.htm#rave')"> Rave On</a> [1:25]
+      <li><a href="javascript:popUp('ss/king.htm#ploughboy')"> The Ploughboy And The Cockney</a> [3:35]
+      <li><a href="javascript:popUp('ss/king.htm#gower')"> The Gower Wassail</a> [5:24]
+      <li><a href="javascript:popUp('ss/king.htm#jigs')"> Jigs: <b>A</b>. Paddy Clancey's Jig <b>B</b>. Willie Clancey's Fancy</a> [3:08]
+      <li><a href="javascript:popUp('ss/king.htm#skewball')"> Skewball</a> [3:31]
+      </ol></div><br>
+  <li><b id="Out21" class="Outline" style="cursor:hand">
+    Horkstow Grange (1998)</b>
+    <div id="Out21details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br> 
+      <li><a href="javascript:popUp('ss/horkstow.htm#old')"> The Old Turf Fire</a> [3:50]
+      <li><a href="javascript:popUp('ss/horkstow.htm#tricks')"> The Tricks of London</a> [2:43]
+      <li><a href="javascript:popUp('ss/horkstow.htm#horkstow')"> Horkstow Grange</a> [2:13]
+      <li><a href="javascript:popUp('ss/horkstow.htm#randall')"> Lord Randall</a> [4:15]
+      <li><a href="javascript:popUp('ss/horkstow.htm#erin')"> Erin</a> [6:15]
+      <li><a href="javascript:popUp('ss/horkstow.htm#queen')"> Queen Mary / Hunsden House</a> [3:07]
+      <li><a href="javascript:popUp('ss/horkstow.htm#birdy')"> Bonny Birdy</a> [6:04]
+      <li><a href="javascript:popUp('ss/horkstow.htm#irish')"> Bonny Irish Boy</a> [3:48]
+      <li><a href="javascript:popUp('ss/horkstow.htm#wish')"> I Wish That I Was Never Wed</a> [2:52]
+      <li><a href="javascript:popUp('ss/horkstow.htm#australia')"> Australia</a> [3:40]
+      <li><a href="javascript:popUp('ss/horkstow.htm#one')"> One True Love</a> [4:22]
+      <li><a href="javascript:popUp('ss/horkstow.htm#parting')"> The Parting Glass</a> [3:12]
+      </ol></div><br>
+  <li><b id="Out22" class="Outline" style="cursor:hand">
+    The Journey (1999)</b>
+    <div id="Out22details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li>(Mk1)<a href="javascript:popUp('ss/journey.htm#calling')"> A Calling-On Song</a>
+      <li><a href="javascript:popUp('ss/journey.htm#blacksmith')"> The Blacksmith</a>
+      <li><a href="javascript:popUp('ss/journey.htm#fishermans')"> Fisherman's Wife</a>
+      <li><a href="javascript:popUp('ss/journey.htm#dark')"> Dark-Eyed Sailor</a>
+      <li><a href="javascript:popUp('ss/journey.htm#blackleg')"> Blackleg Miner</a>
+      <li><a href="javascript:popUp('ss/journey.htm#lowlands')"> Lowlands Of Holland</a>
+      <li>(Mk2)<a href="javascript:popUp('ss/journey.htm#cold')"> Cold Haily Rainy Night</a>
+      <li><a href="javascript:popUp('ss/journey.htm#charlie')"> Charlie</a>
+      <li><a href="javascript:popUp('ss/journey.htm#jigs')"> Jigs: Brian O'Lynn &amp; The Hag With The Money</a>
+      <li><a href="javascript:popUp('ss/journey.htm#gower')"> Gower Wassail</a>
+      <li><a href="javascript:popUp('ss/journey.htm#lark')"> Lark In the Morning</a>
+      <li>(Mk3)<a href="javascript:popUp('ss/journey.htm#john')"> John Barleycorn</a>
+      <li><a href="javascript:popUp('ss/journey.htm#ups')"> The Ups And Downs</a>
+      <li><a href="javascript:popUp('ss/journey.htm#edward')"> Edward</a>
+      <li><a href="javascript:popUp('ss/journey.htm#cam')"> Cam ye O'er Frae France</a>
+      <li><a href="javascript:popUp('ss/journey.htm#all')"> All Around My Hat</a>
+      <li>(Mk4)<a href="javascript:popUp('ss/journey.htm#wife')"> Wife Of The Soldier</a>
+      <li><a href="javascript:popUp('ss/journey.htm#maid')"> The Maid And The Palmer</a>
+      <li><a href="javascript:popUp('ss/journey.htm#sweep')"> Sweep, Chimney Sweep</a>
+      <li>(Mk5)<a href="javascript:popUp('ss/journey.htm#corbies')"> Corbies</a>
+      <li><a href="javascript:popUp('ss/journey.htm#harvest')"> Harvest Of The Moon</a>
+      <li><a href="javascript:popUp('ss/journey.htm#water')"> The Water Is Wide</a>
+      <li><a href="javascript:popUp('ss/journey.htm#elf')"> The Elf Knight</a>
+      <li><a href="javascript:popUp('ss/journey.htm#thomas')"> Thomas The Rhymer</a>
+      <li>(Encores)<a href="javascript:popUp('ss/journey.htm#rave')"> Rave On</a>
+      <li><a href="javascript:popUp('ss/journey.htm#tunes')"> Tunes: The Lark In The Morning &amp; Mason's Apron</a>
+      </ol></div><br>
+  <li><b id="Out23" class="Outline" style="cursor:hand">
+    Bedlam Born (2000)</b><font color="red">NEW!</font>
+    <div id="Out23details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li>Well Done Liar!
+      <li>Who Told The Butcher?
+      <li>John of Ditchford
+      <li>I See His Blood Upon The Rose
+      <li>Black Swan
+      <li>The Beggar
+      <li>Poor Old Soldier
+      <li>Arbour
+      <li>There Was A Wealthy Merchant
+      <li>Beyond The Dreaming Place
+      <li>We Poor Labouring Men
+      <li>The Connemara Cradle Song
+      <li>Stephen
+      <li>The White Cliffs Of Dover
+      </ol></div><br>
+  
+  <li><b id="Out24" class="Outline" style="cursor:hand">
+    Other Span Sites</b>
+    <div id="Out24details" style="display:None; position:relative; left:12;">
+      <ol type="i"><br>
+      <li><a href="https://web.archive.org/web/20010221103923/http://www.informatik.uni-hamburg.de/~zierke/steeleye.span/">Reinhard Zierke's</a>
+      <li><a href="https://web.archive.org/web/20010221103923/http://ourworld.compuserve.com/homepages/RichardHollis/">Richard Hollis'</a>
+      <li><a href="https://web.archive.org/web/20010221103923/http://www.kellett.freeserve.co.uk/">Chris Kellett's</a>
+      <li><a href="https://web.archive.org/web/20010221103923/http://www.hourwolf.com/steeleye/">A Discography at Hourwolf</a>
+      <li><a href="https://web.archive.org/web/20010221103923/http://www.gaudela.net/prior/">Maddy Prior's Official</a>
+      <li><a href="https://web.archive.org/web/20010221103923/http://www.peterknight.net/">Peter Knight's Official</a>
+      <li><a href="https://web.archive.org/web/20010221103923/http://www.gaywoods.homestead.com/">Gay Woods' Official</a>
+      </ol></div><br>
+  
+  </ol></font></b>
+    <font size="6px" face="viner hand itc" color="CCCCCC">
+    <b><i>* * *</i></b></font><br>
+    <a name="bot"></a>
+  </div><!-- ####### END FRAME ######### -->
+  
+  <div id="notes1">
+  <font size="2">All material on this page is copyrighted by <b>Steeleye Span</b>.<br>
+    If any copyright is being infringed please <a href="https://web.archive.org/web/20010221103923/mailto:HerrToad@yahoo.com">contact me.</a></font><br>
+    Last update: October 7, 2000. 21.00 CDT
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  
+  <p align="center" id="notes2">
+    <font color="green" size="4"><b>
+    Questions? Comments? Additions? Corrections?</b> 
+    </font><br>
+    <b>Any welcome. <a href="https://web.archive.org/web/20010221103923/mailto:HerrToad@yahoo.com">Email me</a>.</b>
+  </p>
+  
+  [an error occurred while processing this directive]
+  <p align="center" id="ring">
+  <a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?home&amp;ring=lyrics" target="_top"><b>. : thE LYRICS Ring : .</b></a><br><font size="2">This <a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?home&amp;ring=lyrics" target="_top">Lyrics Ring</a> site is owned by <a href="https://web.archive.org/web/20010221103923/mailto:HerrToad@yahoo.com">PDR</a>. <br>[<a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?ring=lyrics&amp;id=168&amp;prev" target="_top">Previous</a> | <a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?ring=lyrics&amp;id=168&amp;next" target="_top">Next</a> | <a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?ring=lyrics&amp;id=168&amp;next5" target="_top">Next 5</a> | <a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?ring=lyrics&amp;random" target="_top">Random site</a> | <a href="https://web.archive.org/web/20010221103923/http://search.webring.com/cgi-bin/search?sid=;ringid=lyrics;ringsearch" target="_top">Search</a>]</font>
+  <br><font size="2"><i>Wanna join the ring? <a href="https://web.archive.org/web/20010221103923/http://www.webring.org/cgi-bin/webring?home&amp;ring=lyrics" target="_top">Click here for info</a>.</i></font>
+  <br><b><a href="https://web.archive.org/web/20010221103923/http://www.eatsleepmusic.com/" title="Eat Sleep MUSIC!">www.EatSleepMusic.com</a></b>
+  </p>[an error occurred while processing this directive]
+  
+  <!-- ### Scroll Buttons -->
+  <div id="scroll1">
+    <a onmousedown="return doScrollerIE('down','s1',40)" onmouseout="clearInterval(sRepeat)" href="#">
+      <img src="/web/20010221103923im_/http://drwho58.tripod.com/bots.gif" border="0">
+    </a></div>
+  <div id="scroll2">
+  <a href="#top">Top</a> | <a href="#bot">Bottom</a></div>
+  <div id="scroll3">
+    <a onmousedown="return doScrollerIE('up','s1',40)" onmouseout="clearInterval(sRepeat)" href="#">
+      <img src="/web/20010221103923im_/http://drwho58.tripod.com/tops.gif" border="0">
+    </a></div>
+  
+  <!-- ### BORDER -->
+  <img id="border1" src="/web/20010221103923im_/http://drwho58.tripod.com/clip.gif">
+  <img id="border2" src="/web/20010221103923im_/http://drwho58.tripod.com/clip.gif">
+  
+  <script language="JavaScript">
+  function clickHandler() {
+    var targetId, srcElement, targetElement;
+    srcElement = window.event.srcElement;
+    if (srcElement.className == "Outline") {
+       targetId = srcElement.id + "details";
+       targetElement = document.all(targetId);
+  
+       if (targetElement.style.display == "none") {
+          targetElement.style.display = "";
+       } else {
+          targetElement.style.display = "none";
+       }
+    }
+  }
+  
+  document.onclick = clickHandler;
+  
+  </script>
+  </body>
+  </html>
+  <!--
+       FILE ARCHIVED ON 10:39:23 Feb 21, 2001 AND RETRIEVED FROM THE
+       INTERNET ARCHIVE ON 22:21:59 Mar 13, 2021.
+       JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+  
+       ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+       SECTION 108(a)(3)).
+  -->
+  <!--
+  playback timings (ms):
+    captures_list: 2133.822
+    exclusion.robots: 477.925
+    exclusion.robots.policy: 477.913
+    xauthn.identify: 382.613
+    xauthn.chkprivs: 94.825
+    RedisCDXSource: 1.815
+    esindex: 0.013
+    LoadShardBlock: 1627.003 (3)
+    PetaboxLoader3.resolve: 240.091 (4)
+    PetaboxLoader3.datanode: 1538.998 (4)
+    CDXLines.iter: 23.879 (3)
+    load_resource: 181.281
+  -->

@@ -1,1 +1,7 @@
+{
   "hello": "hello! did you know that you're #firstLine#?",
+  "stupid": "but is #firstLine# stupid? #finalStatement# #emojiFlower#",
+  "dumb": "you are #shape# and #adjNegPersonality#, #conjunction# like a #size# #color# #animal#. #finalStatement#",
+  "suck": "oh no! you are lost in #geographicFeature.a# and #color.a# #animal# is coming to eat you!",
+  ".": "#replyCatchAll#"
+}
