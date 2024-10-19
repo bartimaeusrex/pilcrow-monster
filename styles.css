@@ -55,6 +55,7 @@ img {
 
 .img-1em {width:1em;}
 .img-2em {width:2em;}
+.img-3em {width:3em;}
 .img-4em {width:4em;}
 .img-8em {width:8em;}
 .img-16em {width:16em;}
@@ -118,7 +119,7 @@ blockquote::before {
   z-index:3;
 }
 
-#title::after {
+#title::before {
   content: "¶.MONSTER/";
 }
 
