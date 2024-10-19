@@ -16,7 +16,7 @@ body {
 a {
   /*text-underline-offset: .25em;
   text-decoration:underline dashed #666;*/
-  color: #000000;
+  color: #070707;
   text-decoration:none;
   background-color: var(--bg-color);
 }
