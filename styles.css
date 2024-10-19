@@ -61,6 +61,13 @@ img {
 
 .img-10px {width:10px;}
 
+.pillcrow {
+  margin:0;
+  padding:0;
+  height:1.25em;
+  width:auto;
+}
+
 .stars {
   height:4em;
   width:10em;
@@ -69,6 +76,10 @@ img {
 
 p {
   margin:1em 0 0 0;
+}
+
+blockquote {
+  color:#552020;
 }
 
 /*
@@ -100,11 +111,15 @@ blockquote::before {
   text-decoration: none;
   background-color: var(--bg-color);
   position:sticky;
-  left:2em;
+  left:1.5em;
   top:2em;
   padding:5px 0px;
   width:min-content;
   z-index:3;
+}
+
+#title::after {
+  content: "¶.MONSTER/";
 }
 
 .content {
@@ -217,3 +232,15 @@ a .blurb {
     max-width: 700px;
     gap:0;
   }
+
+
+  
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: .5em;
+  height: .5em;
+  }
+  
+::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
+::-webkit-scrollbar-thumb {background: #d25b5b;}
+::-webkit-scrollbar-thumb:hover {background: #944040;}
