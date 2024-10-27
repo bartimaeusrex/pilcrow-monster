@@ -80,7 +80,7 @@ p {
 }
 
 blockquote {
-  color:#552020;
+  color:#752626;
 }
 
 /*
@@ -152,6 +152,10 @@ p.firstpara {
   text-indent:0;
 }
 
+.highlighter::after {
+  content:" ➹"
+}
+
 .content::after {
   font-size:.75em;
   font-family: 'Press Start 2P', cursive;
@@ -163,11 +167,31 @@ p.firstpara {
   text-transform:uppercase;
 }
 
+.month {
+  font-size:1em;
+  font-family: 'Press Start 2P', cursive;
+  text-transform:uppercase;
+  margin:1.5em 0 1.5em 0;
+  color:rgba(161, 71, 71, 0.384);
+  text-align:center;
+}
+
+.month::after, .month::before {
+  content:" ×———× "
+}
+
 @media (max-width:700px) {
   .content {
     width: 90%;
     margin-right:2em;
     margin-left:auto;
+  }
+}
+
+@media (max-width:500px) {
+  .month {font-size:.9em;}
+  .month::after, .month::before {
+    content:" × "
   }
 }
 
@@ -188,9 +212,12 @@ p.firstpara {
   /* margin:2em 2em; */
   text-transform:uppercase;
   background-color: rgba(255, 221, 221, 0.4);
+  /* background: linear-gradient(90deg, rgba(255,221,221,1) 0%, rgba(255,255,255,0) 100%); */
   font-weight:600;
-  font-size:0.8em;
+  font-size:0.75em;
   font-family: 'Press Start 2P', cursive;
+  border-right: var(--bg-color) dashed .35em;
+  /* another good red - #d25b5b */
 }
 
 .date a {
@@ -214,8 +241,11 @@ a .blurb {
 .asterism {
   text-align:center;
   margin-bottom:1em;
- /* content:"⁂"; */
 }
+
+.asterism::after {content:"⁂";}
+
+.textred {color:red;}
 
 .logo_pm {
   height:3em;
