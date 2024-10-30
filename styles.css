@@ -104,19 +104,22 @@ blockquote::before {
   filter: grayscale(100%);
 }
 
-#title,
-#title a {
-  color:rgb(223, 11, 11);
+#title, #title a {
+  color:rgba(223, 11, 11);
   font-family: 'Press Start 2P', cursive;
   font-size:1.25rem;
   text-decoration: none;
   background-color: var(--bg-color);
   position:sticky;
-  left:1.5em;
-  top:2em;
-  padding:5px 0px;
+  margin:0 auto 1em auto;
+  display:block;
+  top:.5em;
+  padding:.5em;
   width:min-content;
   z-index:3;
+  border-radius: 20px;
+  border:1px solid rgba(202, 43, 43, 0.123);
+  box-shadow: -3px 3px 3px rgba(83, 62, 62, 0.116);
 }
 
 #title::before {
@@ -124,9 +127,11 @@ blockquote::before {
 }
 
 .content {
-  margin:2em 0 2em 1em;
+  /* margin:2em 0 2em 1em; */
   width:36em;
   line-height:1.5em;
+  margin:auto;
+  display:block;
 }
 
 /* .content a {
