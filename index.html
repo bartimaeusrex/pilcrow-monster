@@ -14,6 +14,60 @@
 
   <script src="https://kit.fontawesome.com/0b4688c080.js" crossorigin="anonymous"></script>
 
+  <!-- THE FOLLOWING SCRIPT IS FOR THE DROPDOWN! ONLY NECESSARY ON THE INDEX PAGE. circa 2000 -->
+
+  <!-- <script language="JavaScript">
+    function clickHandler() {
+      var targetId, srcElement, targetElement;
+      srcElement = window.event.srcElement;
+      if (srcElement.className == "Dropdown") {
+         targetId = srcElement.id + "content";
+         targetElement = document.all(targetId);
+    
+         if (targetElement.style.display == "none") {
+            targetElement.style.display = "";
+         } else {
+            targetElement.style.display = "none";
+         }
+      }
+    }
+    
+    document.onclick = clickHandler;
+    
+    </script> -->
+
+    <!-- CIRCA 2024 JS FROM MDN -->
+<!--
+<script>
+    const divElem = document.querySelector("div");
+    const htmlElem = document.querySelector(":root");
+
+    htmlElem.addEventListener("click", showHide);
+      document.addEventListener("keydown", showHide);
+
+    function showHide() {
+      divElem.classList.toggle("showing");}
+</script>
+
+
+The operative CSS for the MDN Javascript:
+  div {
+    display: none;
+    opacity: 0;}
+
+  .showing {
+    opacity: 1;
+    display: block;
+}
+
+@starting-style {
+  .showing {
+    opacity: 0;
+  }
+}
+
+-->
+
 <!--
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courier+Prime:ital@0;1&family=Cutive+Mono&family=Hammersmith+One&family=Lexend+Tera&family=Montserrat:ital,wght@0,200;0,700;0,900;1,200;1,700&family=Sansita&family=VT323&display=swap" rel="stylesheet">
 
@@ -76,20 +130,39 @@ font-family: 'Press Start 2P', cursive;
 </head>
 
 <body>
-
   <a href="./"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE --></p></a>
   
   <section class="content">
-    <!-- POST 
-    <a href="./202410XX25">
-      <div class="date">2024 November 4: Puppetry</div>
+
+
+
+    <!-- MONTH -->
+    <div class="month"><a name="202411">2024 November</a></div>
+    <div class="inwhich">In which I wax nostalgic about HTML—…
+    </div>
+    <br />
+
+    <!-- POST  -->
+    <a href="./20241102">
+      <div class="date">2024 November 2: Ancient HTML</div>
     </a>
-    <p class="blurb firstpara article">In which I dissemble a wee tiny bit about the magic of puppetry and marionettes and the dang skill it all takes. <a href="./202410XX25"><img class="manicule" src="images/manicule0.png" /></a></p>
-  -->
+    <p class="blurb firstpara article">In which I look back on my excursions with web design, specifically with HTML and CSS, over the past couple decades. Yes, decades.<a href="./20241102"><img class="manicule" src="images/manicule0.png" /></a></p>
+ 
     <!-- MONTH -->
     <div class="month"><a name="202410">2024 October</a></div>
-    <div class="inwhich">In which I introduce my intentions with this homebrew blog—discourse a bit about why I've called it what it is—go over some various project ideas—dive into one of them (simple pixel animation)—going to see a silent horror film classic—and toxic positivity, of all things.</div>
+    <div class="inwhich">In which I introduce my intentions with this homebrew blog—discourse a bit about why I've called it what it is—go over some various project ideas—dive into one of them (simple pixel animation)—going to see a silent horror film classic—and toxic positivity, of all things.
+      <!-- <br />
+      <br /> -->
+      <!-- CAN'T FIGURE OUT HOW TO MAKE THE IMAGE ITS OWN DAMN SIZE, RATHER THAN 100% WIDTH
+      <img class="Dropdown" id="drop0" src="images/pixelgifs/dropdownarrow.gif" /> -->
+      <!-- <a class="Dropdown" id="drop0">🡇🡇</a> -->
+    </div>
     <br />
+
+   
+    <!-- DROPDOWN CONTENT STARTS HERE -->
+     <!-- <div id="drop0content" style="display:none;"> -->
+
 
     <!-- POST -->
     <a href="./20241027">
@@ -126,6 +199,9 @@ font-family: 'Press Start 2P', cursive;
       <div class="date">2024 October 01: Homebrew</div>
     </a>
     <p class="blurb firstpara article">In which I revive my idea for a small, homebrew spot of internet, a very manual, disconnected blog. No frills, just brass tacks: looks good on mobile and desktop, solid typography. Simple.<a href="./20241001"><img class="manicule" src="images/manicule0.png" /></a></p>
+
+
+  <!-- </div> END DROPDOWN DIV -->
 
     <!-- FOOTER -->
   <footer>

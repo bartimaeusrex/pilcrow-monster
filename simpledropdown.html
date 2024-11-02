@@ -1,0 +1,181 @@
+
+
+
+<html>
+<head>
+
+
+<!--
+DROP DOWNS FROM MY 24 YEAR OLD STEELEYE SPAN SITE.
+If I could figure it out as a 16 year old, I can do it again at 40.
+
+THERE MUST BE A CSS-ONLY METHOD, THEN AGAIN THIS FUCKING WORKS!!!!
+It does look a little clunky, tho, from my limited knowledge of JS.
+
+-->
+
+<style>
+  .Dropdown {
+    color:red;
+  }
+</style>
+
+
+<script language="JavaScript">
+  function clickHandler() {
+    var targetId, srcElement, targetElement;
+    srcElement = window.event.srcElement;
+    if (srcElement.className == "Dropdown") {
+       targetId = srcElement.id + "content";
+       targetElement = document.all(targetId);
+  
+       if (targetElement.style.display == "none") {
+          targetElement.style.display = "";
+       } else {
+          targetElement.style.display = "none";
+       }
+    }
+  }
+  
+  document.onclick = clickHandler;
+  
+  </script>
+
+
+
+ </head>
+  <body>
+
+<!-- HTML -->
+<!-- THE CLASSES & IDs ARE NOT DEFINED IN THE CSS, JUST IN THE JAVASCRIPT!
+	style="display:none;" SEEMS NECESSARY DONE HERE -->
+
+HELLO FUCKIN' WORLD.
+
+<br>
+  
+<a id="drop0" class="Dropdown">NOVEMBER 2024</a>
+  <div id="drop0content" style="display:none;">
+    <br>
+    Maddy Prior: Vocals<br>
+    Tim Hart: Vocals, Dulcimer, Guitar<br>
+    Liam Genocky: Drums, Percussion<br>
+    <br>
+  </div>
+<br>
+<a id="drop1" class="Dropdown">OCTOBER 2024</a>
+  <div id="drop1content" style="display:none;">
+    <br>
+    <a href="ss/please.htm#blacksmith"> The Blacksmith</a><br />
+    <a href="ss/please.htm#cold"> Cold, Haily, Windy Night</a>
+    <br>
+  </div>
+<br />
+THIS AND FUCKING THAT.
+
+<!-- <div>
+  <ol>
+  <li><a id="drop0" class="Dropdown">The Band's many contributors:</a>
+    <div id="drop0content" style="display:none;">
+      <ol><br>
+      <li> <b>Maddy Prior</b>: Vocals, 
+      <li> <b>Tim Hart</b>: Vocals, Dulcimer, Guitar
+      <li> <b>Liam Genocky</b>: Drums, Percussion
+      </ol><br>
+    </div>
+
+
+
+<li><a id="drop2" class="Dropdown">Please To See The King (1971)</a>
+    <div id="drop2content" style="display:none;">
+      <ol><br>
+      <li><a href="ss/please.htm#blacksmith"> The Blacksmith</a>
+      <li><a href="ss/please.htm#cold"> Cold, Haily, Windy Night</a>
+      </ol><br>
+    </div>
+
+</ol>
+</div> -->
+
+
+
+
+
+
+<!-- MDN VERSIONS STILL USING JAVASCRIPT, BUT CLEARLY UPDATED.
+ NO LONGER ALL UNIQUE IDs!
+ 
+HTML:
+
+<p>
+  Click <a class="clickhere">here</a> on the screen or press any key to toggle the
+  <code>&lt;div&gt;</code> between hidden and showing.
+</p>
+
+<div>
+  This is THE INITIALLY HIDDEN <code>&lt;div&gt;</code> element that transitions between
+  <code>display: none; opacity: 0</code> and
+  <code>display: block; opacity: 1</code>. Neat, huh? MUST BE A DIV AS PER JAVASCRIPT.
+</div>
+
+<p>
+  This is another paragraph to show that <code>display: none;</code> is being
+  applied and removed on the above <code>&lt;div&gt; </code>. If only its
+  <code>opacity</code> was being changed, it would always take up the space in
+  the DOM.
+</p>
+
+
+CSS:
+
+html {
+  height: 100vh;
+}
+
+
+div {
+  font-size: 1.6rem;
+  padding: 20px;
+  border: 3px solid red;
+  border-radius: 20px;
+  width: 480px;
+
+  display: none; /* SUPER IMPORTANT */
+  opacity: 0; /* SUPER IMPORTANT */
+  transition:
+    opacity 1s,
+    display 1s allow-discrete;
+  /* Equivalent to
+  transition: all 1s allow-discrete; */
+}
+
+.showing {
+  opacity: 1;
+  display: block;
+}
+
+@starting-style {
+  .showing {
+    opacity: 0;
+  }
+}
+
+
+JAVASCRIPT:
+
+
+const divElem = document.querySelector("div");
+const htmlElem = document.querySelector(":root");
+
+htmlElem.addEventListener("click", showHide);
+document.addEventListener("keydown", showHide);
+
+function showHide() {
+  divElem.classList.toggle("showing");
+}
+
+-->
+
+
+ </body>
+  </html>

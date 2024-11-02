@@ -3,19 +3,17 @@
 }
 
 body {
-  margin: 2em 0 0 2em;
+  margin: 0 1.5em;;
   font-family: 'EB Garamond', serif;
   font-size:1em;
   background-color: var(--bg-color);
-/*  background-image: url(images/page_bg.jpg);
+  /* background-image: url(images/bg_halftone_opac15.png);
   background-attachment: fixed;
-  background-repeat: repeat-y;
-  background-blend-mode:normal; */
+  background-blend-mode:multiply; */
+  /* filter:opacity(80%); */
 }
 
 a {
-  /*text-underline-offset: .25em;
-  text-decoration:underline dashed #666;*/
   color: #070707;
   text-decoration:none;
   background-color: var(--bg-color);
@@ -41,7 +39,6 @@ a {
 
 img {
   width:100%;
-  border:double solid #000;
   margin:1em 0;
 }
 
@@ -58,9 +55,8 @@ img {
 .img-3em {width:3em;}
 .img-4em {width:4em;}
 .img-8em {width:8em;}
-.img-16em {width:16em;}
-
 .img-10px {width:10px;}
+.img-16em {width:16em;}
 
 .pillcrow {
   margin:0;
@@ -75,13 +71,9 @@ img {
   padding-bottom:2em;
 }
 
-p {
-  margin:1em 0 0 0;
-}
+p {margin:.5em 0 0 0;}
 
-blockquote {
-  color:#752626;
-}
+blockquote {color:#752626;}
 
 /*
 blockquote {
@@ -113,7 +105,7 @@ blockquote::before {
   position:sticky;
   margin:0 auto 1em auto;
   display:block;
-  top:.5em;
+  top:1em;
   padding:.5em;
   width:min-content;
   z-index:3;
@@ -127,38 +119,16 @@ blockquote::before {
 }
 
 .content {
-  /* margin:2em 0 2em 1em; */
-  width:36em;
+  width:34em;
   line-height:1.5em;
-  margin:auto;
+  margin:0 auto;
   display:block;
-}
-
-/* .content a {
+  padding:1.5em 2.5em 0 2.5em; /* for border */
+  border:1px dashed #ffffff;
+  border-top:0;
+  /* border-radius:8px; */
+  /* border-right:1px solid #75262621; */
   background-color: var(--bg-color);
-}
-  */
-
-.highlighter {
-  background-color: rgba(255, 240, 155, 0.3);
-  text-decoration:underline solid orange;
-  text-underline-offset: .25em;
-}
-
-.article p {
-  text-indent:1.25em;
-}
-
-.firstpara::before {
-  content:"¶ ";
-}
-
-p.firstpara {
-  text-indent:0;
-}
-
-.highlighter::after {
-  content:" ➹"
 }
 
 .content::after {
@@ -167,16 +137,49 @@ p.firstpara {
   content:"© reinhart mmxxiv";
 }
 
+/* .content a {
+  background-color: var(--bg-color);
+}
+  */
+
+/* FOR DROPDOWN MENU!! */
+
+.dropdown {
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  font-size:4em;
+  color:red;
+  text-decoration: none;
+}
+
+.highlighter {
+  background-color: rgba(255, 240, 155, 0.3);
+  text-decoration:underline solid orange;
+  text-underline-offset: .25em;
+}
+
+.highlighter::after {content:" ➹"}
+
+.article {
+  text-indent:1.25em;
+
+}
+
 .article::first-line {
   color:rgb(224, 18, 18);
   text-transform:uppercase;
 }
 
+.firstpara::before {content:"¶ ";}
+
+p.firstpara {text-indent:0;}
+
 .month {
   font-size:1em;
   font-family: 'Press Start 2P', cursive;
   text-transform:uppercase;
-  margin:1.5em 0 1.5em 0;
+  margin:0 0 1.5em 0;
   color:rgba(161, 71, 71, 0.384);
   text-align:center;
 }
@@ -185,11 +188,17 @@ p.firstpara {
   content:" ×———× "
 }
 
-@media (max-width:700px) {
+iframe {
+  /* aspect-ratio:16 / 9; */
+  width:100%;
+}
+
+
+@media (max-width:43em) {
   .content {
     width: 90%;
-    margin-right:2em;
-    margin-left:auto;
+    border:none;
+    padding:0;
   }
 }
 
@@ -201,10 +210,8 @@ p.firstpara {
 }
 
 .inwhich {
-  margin-left:auto;
-  margin-right:auto;
+  margin:1em auto 0 auto;
   text-align:center;
-  margin-top:1em;
   width:85%;
   font-style:italic;
 }
@@ -250,6 +257,14 @@ a .blurb {
 
 .asterism::after {content:"⁂";}
 
+.fleuron {
+  text-align:center;
+  margin:1em 0;
+  font-size:1em;
+}
+
+.fleuron::after {content:"❦";}
+
 .textred {color:red;}
 
 .logo_pm {
@@ -269,7 +284,7 @@ a .blurb {
     gap:0;
   }
 
-
+/* footer {margin:5.5em 0;} */
   
 /* Scrollbar styles */
 ::-webkit-scrollbar {
