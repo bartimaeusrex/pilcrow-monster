@@ -118,6 +118,19 @@ blockquote::before {
   content: "¶.MONSTER/";
 }
 
+.description {
+  font-family: 'Press Start 2P', cursive;
+  font-size:.6em;
+  margin:0 auto 2em auto;
+  padding:1em;
+  text-align:center;
+  width:85%;
+  color:#0000006e;
+  border:1px dashed #00000023;
+  border-radius:20px;
+  background-color: #d25b5b09;
+}
+
 .content {
   width:34em;
   line-height:1.5em;
@@ -199,6 +212,10 @@ iframe {
     width: 90%;
     border:none;
     padding:0;
+  }
+
+  #title {
+    margin:0 auto 2em auto;
   }
 }
 
