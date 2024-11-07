@@ -75,6 +75,8 @@ p {margin:.5em 0 0 0;}
 
 blockquote {color:#752626;}
 
+.no-firstline-indent {text-indent:0;}
+
 /*
 blockquote {
   border-left:1em solid rgba(255, 232, 155, 0.7);
