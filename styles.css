@@ -150,8 +150,9 @@ blockquote::before {
   font-family: 'Press Start 2P', cursive;
   font-size:.6em;
   margin:0 auto 2em auto;
-  padding:1em;
+  padding:2em;
   text-align:center;
+  line-height:1.75em;
   width:85%;
   color:#0000006e;
   border:1px dashed #00000023;

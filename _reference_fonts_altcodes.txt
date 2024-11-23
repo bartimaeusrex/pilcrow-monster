@@ -1,0 +1,57 @@
+<!--
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courier+Prime:ital@0;1&family=Cutive+Mono&family=Hammersmith+One&family=Lexend+Tera&family=Montserrat:ital,wght@0,200;0,700;0,900;1,200;1,700&family=Sansita&family=VT323&display=swap" rel="stylesheet">
+
+font-family: 'Amatic SC', cursive;
+font-family: 'Courier Prime', monospace;
+font-family: 'Cutive Mono', monospace;
+font-family: 'EB Garamond', serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Lexend Tera', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sansita', sans-serif;
+font-family: 'VT323', monospace;
+font-family: 'Press Start 2P', cursive;
+-->
+
+  <!--
+    ¶⸿
+    ●⁕•➺➻
+    ⁂⁝⁘…
+    †‡
+    ©§✚
+    “”‘’
+    ✃✁
+    ☞ ☛ ☟☝☚
+    ⬈⬉⬊⬋⬌⬀⬁⬂⬃
+    ⇓
+    ▼▲
+    🡄🡆🡅🡇
+    ❧❦☙
+    ↓→↑←
+    ✉
+
+    ALT CODES (ALT+#)
+    ---------------------------------------------
+    1 ☺ 3 ♥ 15 ☼ 127 ⌂
+    7 • 9 ○ 0176 ° 249 ∙
+    13 ♪ 14 ♫
+
+    24 ↑ 25 ↓ 26 → 27 ←
+    16 ► 17 ◄ 30 ▲ 31 ▼
+    22 ▬ 219 █ 220 ▄ 221 ▌ 222 ▐ 223 ▀ 254 ■
+    0150 – 0151 — 45 - 179 │ 240 ≡ 186 ║
+
+    176 ░ 177 ▒ 178 ▓
+
+    19 ‼ 0133 … 0239 ï
+    20 ¶ 21 § 0191 ¿
+    0185 ¹ 253 ² 0179 ³ 171 ½ 172 ¼ 0190 ¾
+    0162 ¢ 0128 € 0163 £
+
+    0145 ‘ 0146 ’ 0147 “ 0148 ”
+    174 « 175 »
+
+    0153 ™ 0169 © 0174 ®
+    0215 × 0177 ± 236 ∞ 242 ≥ 243 ≤ 247 ≈
+
+  -->

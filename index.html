@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="styles.css" rel="stylesheet" />
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Press+Start+2P&family=Courier+Prime:ital@0;1&family=Cutive+Mono&family=Hammersmith+One&family=Lexend+Tera&family=EB+Garamond:ital,wght@0,400;0,600;0,800;1,400;1,800&family=Montserrat:ital,wght@0,200;0,700;0,900;1,200;1,700&family=Sansita&family=VT323&display=swap" rel="stylesheet">
+  <pm-headerinfo></pm-headerinfo>
 
-  <script src="https://kit.fontawesome.com/0b4688c080.js" crossorigin="anonymous"></script>
+  <script defer src="PMHeaderInfo.js"></script>
+  <script defer src="PMManicule.js"></script>
+  <script defer src="PMSignature.js"></script>
+  <script defer src="PMFooter.js"></script>
 
   <!-- THE FOLLOWING SCRIPT IS FOR THE DROPDOWN! ONLY NECESSARY ON THE INDEX PAGE. circa 2000 -->
 
@@ -68,64 +66,6 @@ The operative CSS for the MDN Javascript:
 
 -->
 
-<!--
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Courier+Prime:ital@0;1&family=Cutive+Mono&family=Hammersmith+One&family=Lexend+Tera&family=Montserrat:ital,wght@0,200;0,700;0,900;1,200;1,700&family=Sansita&family=VT323&display=swap" rel="stylesheet">
-
-font-family: 'Amatic SC', cursive;
-font-family: 'Courier Prime', monospace;
-font-family: 'Cutive Mono', monospace;
-font-family: 'EB Garamond', serif;
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Lexend Tera', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Sansita', sans-serif;
-font-family: 'VT323', monospace;
-font-family: 'Press Start 2P', cursive;
--->
-
-  <!--
-    ¶⸿
-    ●⁕•➺➻
-    ⁂⁝⁘…
-    †‡
-    ©§✚
-    “”‘’
-    ✃✁
-    ☞ ☛ ☟☝☚
-    ⬈⬉⬊⬋⬌⬀⬁⬂⬃
-    ⇓
-    ▼▲
-    🡄🡆🡅🡇
-    ❧❦☙
-    ↓→↑←
-    ✉
-
-    ALT CODES (ALT+#)
-    ---------------------------------------------
-    1 ☺ 3 ♥ 15 ☼ 127 ⌂
-    7 • 9 ○ 0176 ° 249 ∙
-    13 ♪ 14 ♫
-
-    24 ↑ 25 ↓ 26 → 27 ←
-    16 ► 17 ◄ 30 ▲ 31 ▼
-    22 ▬ 219 █ 220 ▄ 221 ▌ 222 ▐ 223 ▀ 254 ■
-    0150 – 0151 — 45 - 179 │ 240 ≡ 186 ║
-
-    176 ░ 177 ▒ 178 ▓
-
-    19 ‼ 0133 … 0239 ï
-    20 ¶ 21 § 0191 ¿
-    0185 ¹ 253 ² 0179 ³ 171 ½ 172 ¼ 0190 ¾
-    0162 ¢ 0128 € 0163 £
-
-    0145 ‘ 0146 ’ 0147 “ 0148 ”
-    174 « 175 »
-
-    0153 ™ 0169 © 0174 ®
-    0215 × 0177 ± 236 ∞ 242 ≥ 243 ≤ 247 ≈
-
-  -->
-
   <title>¶.Monster/</title>
 </head>
 
@@ -135,8 +75,7 @@ font-family: 'Press Start 2P', cursive;
   <section class="content">
 
     <div class="description">
-      pilcrow.monster/ is <a href="./reinhart">reinhart</a>'s homebrew blog of haphazard thoughts and musings.
-      <br />no ads, no seo, no ai.
+      <a href="./reinhart">reinhart</a>'s homebrew blog of haphazard thoughts, theories, & recollections. no ads, seo, or ai.
     </div>
 
 
@@ -153,31 +92,36 @@ font-family: 'Press Start 2P', cursive;
     <!-- <a href="./20241115">
     <div class="date">2024 November 15: Anaglyphs & Stereoscopic 3D</div>
     </a>
-    <p class="blurb firstpara article">In which your most humblest blogger crosses his eyes and discourses about 3D anaglyphs and sterescopes. Get yer red/cyan glasses ready.<a href="./20241115"><img class="manicule" src="images/manicule0.png" /></a></p> -->
+    <p class="blurb firstpara article">In which your most humblest blogger crosses his eyes and discourses about 3D anaglyphs and sterescopes. Get yer red/cyan glasses ready.
+      <a href="./20241115"><pm-manicule></pm-manicule></a></p> -->
 
     <!-- POST  -->
     <a href="./20241116">
     <div class="date">2024 November 16: Side-Scroller Crow</div>
     </a>
-    <p class="blurb firstpara article">In which I present my incredibly janky foray into an unfinished interactive 2D side-scroller featuring a crow.<a href="./20241116"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I present my incredibly janky foray into an unfinished interactive 2D side-scroller featuring a crow.
+      <a href="./20241116"><pm-manicule></pm-manicule></a></p>
 
     <!-- POST  -->
     <a href="./20241113">
     <div class="date">2024 November 13: The Correspondents & Related Reminiscences</div>
     </a>
-    <p class="blurb firstpara article">In which I finally watch a particularly amazing music video, and reminisce about vaguely tangentially-related memories from my time in England, ages ago.<a href="./20241114"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I finally watch a particularly amazing music video, and reminisce about vaguely tangentially-related memories from my time in England, ages ago.
+      <a href="./20241114"><pm-manicule></pm-manicule></a></p>
     
     <!-- POST  -->
     <a href="./20241106">
       <div class="date">2024 November 6: What</div>
     </a>
-    <p class="blurb firstpara article">In which...; fuck.<a href="./20241106"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which...; fuck.
+      <a href="./20241106"><pm-manicule></pm-manicule></a></p>
 
     <!-- POST  -->
     <a href="./20241102">
       <div class="date">2024 November 2: Ancient HTML</div>
     </a>
-    <p class="blurb firstpara article">In which I look back on my excursions with web design, specifically with HTML and CSS, over the past couple decades. Yes, decades.<a href="./20241102"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I look back on my excursions with web design, specifically with HTML and CSS, over the past couple decades. Yes, decades.
+      <a href="./20241102"><pm-manicule></pm-manicule></a></p>
  
     <!-- MONTH -->
     <div class="month"><a name="202410" href="./202410">2024 October ></a></div>
@@ -199,48 +143,50 @@ font-family: 'Press Start 2P', cursive;
     <a href="./20241027">
       <div class="date">2024 October 27: Positivity (Toxic)</div>
     </a>
-    <p class="blurb firstpara article">In which our humble bloggist attempts to make a case for healthy negativity or something. Practical pessimism? Sympathetic cynicism...?<a href="./20241027"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which our humble bloggist attempts to make a case for healthy negativity or something. Practical pessimism? Sympathetic cynicism...?
+      <a href="./20241027"><pm-manicule></pm-manicule></a></p>
      <!-- POST -->
     <a href="./20241018">
       <div class="date">2024 October 18: Nosferatu</div>
     </a>
-    <p class="blurb firstpara article">In which I discourse upon the joys of seeing the 1922 grand-daddy of horror films with a live orchestra in a packed theater.<a href="./20241018"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I discourse upon the joys of seeing the 1922 grand-daddy of horror films with a live orchestra in a packed theater.
+      <a href="./20241018"><pm-manicule></pm-manicule></a></p>
     <!-- POST -->
     <a href="./20241012">
       <div class="date">2024 October 12: Pacing</div>
     </a>
-    <p class="blurb firstpara article">In which I contemplate an element of narrative and my mixed feelings about it's perceived importance, and related general musings.<a href="./20241012"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I contemplate an element of narrative and my mixed feelings about it's perceived importance, and related general musings.
+      <a href="./20241012"><pm-manicule></pm-manicule></a></p>
     <!-- POST -->
     <a href="./20241010">
       <div class="date">2024 October 10: Pixels</div>
     </a>
-    <p class="blurb firstpara article">In which I admit to a bit of a fib, provide examples to illustrate exactly how much of a fib it was, and expound on a particular area of related curiosity. <a href="./20241010"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I admit to a bit of a fib, provide examples to illustrate exactly how much of a fib it was, and expound on a particular area of related curiosity.
+      <a href="./20241010"><pm-manicule></pm-manicule></a></p>
     <!-- POST -->
     <a href="./20241007">
       <div class="date">2024 October 07: Projects</div>
     </a>
-    <p class="blurb firstpara article">In which your humble blogger lays out some of their in-progress projects, from vague concept to finishing touches, and why a bunch of them may never get done, and that's ok.<a href="./20241007"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which your humble blogger lays out some of their in-progress projects, from vague concept to finishing touches, and why a bunch of them may never get done, and that's ok.
+      <a href="./20241007"><pm-manicule></pm-manicule></a></p>
     <!-- POST -->
     <a href="./20241004">
       <div class="date">2024 October 04: Pilcrow!</div>
     </a>
-    <p class="blurb firstpara article">In which I attempt to explain myself, and this Pilcrow Monster thing; what even is a pilcrow and why is it called that in the first place?<a href="./20241004"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I attempt to explain myself, and this Pilcrow Monster thing; what even is a pilcrow and why is it called that in the first place?
+      <a href="./20241004"><pm-manicule></pm-manicule></a></p>
     <!-- POST -->
     <a href="./20241001">
       <div class="date">2024 October 01: Homebrew</div>
     </a>
-    <p class="blurb firstpara article">In which I revive my idea for a small, homebrew spot of internet, a very manual, disconnected blog. No frills, just brass tacks: looks good on mobile and desktop, solid typography. Simple.<a href="./20241001"><img class="manicule" src="images/manicule0.png" /></a></p>
+    <p class="blurb firstpara article">In which I revive my idea for a small, homebrew spot of internet, a very manual, disconnected blog. No frills, just brass tacks: looks good on mobile and desktop, solid typography. Simple.
+      <a href="./20241001"><pm-manicule></pm-manicule></a></p>
 
 
   <!-- </div> END DROPDOWN DIV -->
 
-    <!-- FOOTER -->
-  <footer>
-    <a href="mailto:reinhart@pilcrow.monster"><img class="pillcrow" src="images/envelope.png" alt="reinhart@pilcrow.monster" title="reinhart@pilcrow.monster"></a>
-    <img class="pillcrow" src="images/pixelgifs/pillcrow2.gif" />
-  </footer>
-
-  </section>
+  <pm-footer></pm-footer>
+</section>
 
 </body>
 </html>
