@@ -12,10 +12,10 @@ body {
   font-family: 'EB Garamond', serif;
   font-size:1em;
   background-color: var(--bg-color);
-  /* background-image: url(images/bg_halftone_opac15.png);
+  background-image: url(images/bg_dore_londonsky_skinny_pink.png);
   background-attachment: fixed;
-  background-blend-mode:multiply; */
-  /* filter:opacity(80%); */
+  background-blend-mode:multiply;
+  background-position: bottom;
 }
 
 a {
@@ -168,7 +168,7 @@ blockquote::before {
   padding:1.5em 2.5em 0 2.5em; /* for border */
   border:1px dashed #ffffff;
   border-top:0;
-  /* border-radius:8px; */
+  border-radius:20px 20px 0 0;
   /* border-right:1px solid #75262621; */
   background-color: var(--bg-color);
 }
@@ -230,6 +230,16 @@ p.firstpara {text-indent:0;}
   content:" ×———× "
 }
 
+.Dropdown {cursor:pointer;}
+/* .Dropdown:hover{border-bottom: 1em solid  #f13f3f2f;} */
+.Dropdown:hover{
+  transition: all 0.5s ease-out;
+}
+.Dropdown:hover::before{color:red; content:"🡇 ";}
+.Dropdown:hover::after{color:red; content:" 🡇";}
+
+
+
 iframe {
   /* aspect-ratio:16 / 9; */
   width:100%;
@@ -241,6 +251,11 @@ iframe {
     width: 90%;
     border:none;
     padding:0;
+  }
+
+  body {
+    background: none;
+    background-color: var(--bg-color);
   }
 
   #title {

@@ -6,7 +6,7 @@ class PMSignature extends HTMLElement {
     constructor() {
         super()
         this.innerHTML = `
-<div class="align-right"><img class="img-2em" src="images/pm_big2.png"/></div>
+<div class="align-right"><img class="img-3em" src="images/pm4.png"/></div>
     <br />
         `
         }

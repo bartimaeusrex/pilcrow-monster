@@ -11,28 +11,9 @@
   <script defer src="PMManicule.js"></script>
   <script defer src="PMSignature.js"></script>
   <script defer src="PMFooter.js"></script>
+  <script defer src="PM202410.js"></script>
 
-  <!-- THE FOLLOWING SCRIPT IS FOR THE DROPDOWN! ONLY NECESSARY ON THE INDEX PAGE. circa 2000 -->
-
-  <!-- <script language="JavaScript">
-    function clickHandler() {
-      var targetId, srcElement, targetElement;
-      srcElement = window.event.srcElement;
-      if (srcElement.className == "Dropdown") {
-         targetId = srcElement.id + "content";
-         targetElement = document.all(targetId);
-    
-         if (targetElement.style.display == "none") {
-            targetElement.style.display = "";
-         } else {
-            targetElement.style.display = "none";
-         }
-      }
-    }
-    
-    document.onclick = clickHandler;
-    
-    </script> -->
+  <script src="dropdown.js"></script>
 
     <!-- CIRCA 2024 JS FROM MDN -->
 <!--
@@ -81,9 +62,7 @@ The operative CSS for the MDN Javascript:
 
     <!-- MONTH -->
     <div class="month"><a name="202411">2024 November</a></div>
-    <div class="inwhich">In which I wax nostalgic about HTML—mourn what might have been—boogie down to Fear & Delight—unveil an old 2D side-scroller experiment—finally discovering (possibly already much superseded) web components—…
-
-<!-- look at some experiments with 3D imagery—… -->
+    <div class="inwhich">In which I wax nostalgic about HTML—mourn what might have been—boogie down to Fear & Delight—unveil an old 2D side-scroller experiment—and finally discovering (possibly already much superseded) web components.
 
     </div>
     <br />
@@ -130,8 +109,8 @@ The operative CSS for the MDN Javascript:
     <p class="blurb firstpara article">In which I look back on my excursions with web design, specifically with HTML and CSS, over the past couple decades. Yes, decades.
       <a href="./20241102"><pm-manicule></pm-manicule></a></p>
  
-    <!-- MONTH -->
-    <div class="month"><a name="202410" href="./202410">2024 October ></a></div>
+    <!-- MONTH href="./202410" -->
+    <div class="month"><a name="202410" id="drop0" class="Dropdown">2024 October</a></div>
     <div class="inwhich">In which I introduce my intentions with this homebrew blog—discourse a bit about why I've called it what it is—go over some various project ideas—dive into one of them (simple pixel animation)—going to see a silent horror film classic—and toxic positivity, of all things.
       <!-- <br />
       <br /> -->
@@ -141,56 +120,9 @@ The operative CSS for the MDN Javascript:
     </div>
     <br />
 
-   
-    <!-- DROPDOWN CONTENT STARTS HERE -->
-     <!-- <div id="drop0content" style="display:none;"> -->
-
-
-    <!-- POST -->
-    <a href="./20241027">
-      <div class="date">2024 October 27: Positivity (Toxic)</div>
-    </a>
-    <p class="blurb firstpara article">In which our humble bloggist attempts to make a case for healthy negativity or something. Practical pessimism? Sympathetic cynicism...?
-      <a href="./20241027"><pm-manicule></pm-manicule></a></p>
-     <!-- POST -->
-    <a href="./20241018">
-      <div class="date">2024 October 18: Nosferatu</div>
-    </a>
-    <p class="blurb firstpara article">In which I discourse upon the joys of seeing the 1922 grand-daddy of horror films with a live orchestra in a packed theater.
-      <a href="./20241018"><pm-manicule></pm-manicule></a></p>
-    <!-- POST -->
-    <a href="./20241012">
-      <div class="date">2024 October 12: Pacing</div>
-    </a>
-    <p class="blurb firstpara article">In which I contemplate an element of narrative and my mixed feelings about it's perceived importance, and related general musings.
-      <a href="./20241012"><pm-manicule></pm-manicule></a></p>
-    <!-- POST -->
-    <a href="./20241010">
-      <div class="date">2024 October 10: Pixels</div>
-    </a>
-    <p class="blurb firstpara article">In which I admit to a bit of a fib, provide examples to illustrate exactly how much of a fib it was, and expound on a particular area of related curiosity.
-      <a href="./20241010"><pm-manicule></pm-manicule></a></p>
-    <!-- POST -->
-    <a href="./20241007">
-      <div class="date">2024 October 07: Projects</div>
-    </a>
-    <p class="blurb firstpara article">In which your humble blogger lays out some of their in-progress projects, from vague concept to finishing touches, and why a bunch of them may never get done, and that's ok.
-      <a href="./20241007"><pm-manicule></pm-manicule></a></p>
-    <!-- POST -->
-    <a href="./20241004">
-      <div class="date">2024 October 04: Pilcrow!</div>
-    </a>
-    <p class="blurb firstpara article">In which I attempt to explain myself, and this Pilcrow Monster thing; what even is a pilcrow and why is it called that in the first place?
-      <a href="./20241004"><pm-manicule></pm-manicule></a></p>
-    <!-- POST -->
-    <a href="./20241001">
-      <div class="date">2024 October 01: Homebrew</div>
-    </a>
-    <p class="blurb firstpara article">In which I revive my idea for a small, homebrew spot of internet, a very manual, disconnected blog. No frills, just brass tacks: looks good on mobile and desktop, solid typography. Simple.
-      <a href="./20241001"><pm-manicule></pm-manicule></a></p>
-
-
-  <!-- </div> END DROPDOWN DIV -->
+    <div id="drop0content" style="display:none;">
+      <pm-202410></pm-202410>
+      </div>
 
   <pm-footer></pm-footer>
 </section>
