@@ -12,7 +12,7 @@ body {
   font-family: 'EB Garamond', serif;
   font-size:1em;
   background-color: var(--bg-color);
-  background-image: url(images/bg_dore_londonsky_skinny_pink.png);
+  background-image: url(images/bg_dore_londonsky_pink.png);
   background-attachment: fixed;
   background-blend-mode:multiply;
   background-position: bottom;
@@ -202,6 +202,10 @@ blockquote::before {
 }
 
 .highlighter::after {content:" ➹"}
+
+.hilite {
+  background-color: rgba(255, 240, 155, 0.2);
+}
 
 .article {
   text-indent:1.25em;
