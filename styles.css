@@ -63,6 +63,10 @@ img {
 .img-10px {width:10px;}
 .img-16em {width:16em;}
 
+._1em {font-size:1em;}
+._1.5em {font-size:1.5em;}
+._2em {font-size:2em;}
+
 .pillcrow {
   margin:0;
   padding:0;
@@ -81,6 +85,11 @@ p {margin:.5em 0 0 0;}
 blockquote {color:#752626;}
 
 .no-firstline-indent {text-indent:0;}
+
+.box_text {
+  border:1px solid rgba(0, 0, 0, 0.31);
+  padding:5px;}
+
 
 /*
 blockquote {
@@ -176,7 +185,7 @@ blockquote::before {
 .content::after {
   font-size:.75em;
   font-family: 'Press Start 2P', cursive;
-  content:"© reinhart mmxxiv";
+  content:"© reinhart mmxxv";
 }
 
 /* .content a {
@@ -221,7 +230,7 @@ blockquote::before {
 
 p.firstpara {text-indent:0;}
 
-.month {
+.month, .year {
   font-size:1em;
   font-family: 'Press Start 2P', cursive;
   text-transform:uppercase;
@@ -229,13 +238,20 @@ p.firstpara {text-indent:0;}
   color:rgba(161, 71, 71, 0.384);
   text-align:center;
 }
-
-.month::after, .month::before {
-  content:" ×———× "
+.month::after, .month::before {content:" ×———× "}
+.year {
+  font-size:1.5em;
+  color:rgba(161, 71, 71, 0.384);
 }
+
+.year::after, .year::before {content:" × "}
 
 .Dropdown {cursor:pointer;}
 /* .Dropdown:hover{border-bottom: 1em solid  #f13f3f2f;} */
+
+.Dropdown::before{color:rgba(0, 0, 0, 0.4); content:"🡇 ";}
+.Dropdown::after{color:rgba(0, 0, 0, 0.4); content:" 🡇";}
+
 .Dropdown:hover{
   transition: all 0.5s ease-out;
 }
@@ -363,10 +379,10 @@ code::after {content:"]";} */
   
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: .5em;
+  width: .65vw;
   height: .5em;
   }
   
 ::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
-::-webkit-scrollbar-thumb {background: #d25b5b;}
-::-webkit-scrollbar-thumb:hover {background: #944040;}
+::-webkit-scrollbar-thumb {background: #d25b5b6c;}
+::-webkit-scrollbar-thumb:hover {background: #d25b5b;}
