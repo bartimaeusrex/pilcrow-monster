@@ -1,9 +1,9 @@
 :root {
-  --bg-color: rgb(248, 245, 242);
+  --bg-color: rgba(80, 63, 32, 0.4);
 }
 
 ::selection {
-  background: rgba(255, 221, 221, 0.4);
+  background: rgba(80, 63, 32, 0.4);
   color: #441a15;
 }
 
@@ -12,13 +12,11 @@ body {
   font-family: 'EB Garamond', serif;
   font-size:1em;
   background-color: var(--bg-color);
-  background-image: url(images/bg_dore_londonsky_pink.png);
+  background-image: url(images/bg_dore_londonsky_coffee.png);
   background-attachment: fixed;
   background-blend-mode:multiply;
   background-position: bottom;
 }
-
-
 
 a {
   color: #070707;
@@ -61,6 +59,7 @@ img {
 .img-2em {width:2em;}
 .img-3em {width:3em;}
 .img-4em {width:4em;}
+.img-6em {width:6em;}
 .img-8em {width:8em;}
 .img-10px {width:10px;}
 .img-16em {width:16em;}
@@ -68,6 +67,8 @@ img {
 ._1em {font-size:1em;}
 ._1.5em {font-size:1.5em;}
 ._2em {font-size:2em;}
+
+.multiply {mix-blend-mode:multiply;}
 
 /* PIXEL ANIMATED CROW */
 .pillcrow {
@@ -84,7 +85,7 @@ img {
 }
 
 /* FOR INLINE PARAGRAPHS */
-.pilcrow {color:rgb(224, 18, 18);}
+.pilcrow {color:rgb(255, 200, 82);}
 .pilcrow::before {content:" ¶ ";}
 
 p {margin:.5em 0 0 0;}
@@ -140,12 +141,16 @@ blockquote::before {
   filter: grayscale(100%);
 }
 
+.dandyasterprofile {
+  width:150px;
+}
+
 #title, #title a {
-  color:rgba(223, 11, 11);
+  color:#411213;
   font-family: 'Press Start 2P', cursive;
   font-size:1.25rem;
   text-decoration: none;
-  background-color: var(--bg-color);
+  background-color: rgb(233, 226, 222);
   position:sticky;
   margin:0 auto 1em auto;
   display:block;
@@ -154,7 +159,7 @@ blockquote::before {
   width:min-content;
   z-index:3;
   border-radius: 20px;
-  border:1px solid rgba(202, 43, 43, 0.123);
+  border:1px solid rgba(0, 0, 0, 0.12);
   box-shadow: -3px 3px 3px rgba(83, 62, 62, 0.116);
 }
 
@@ -182,14 +187,20 @@ blockquote::before {
   margin:0 auto;
   display:block;
   padding:1.5em 2.5em 0 2.5em; /* for border */
-  border:1px dashed #ffffff;
+  border:1px dashed #411213;
   border-top:0;
   border-radius:20px 20px 0 0;
   /* border-right:1px solid #75262621; */
   background-color: var(--bg-color);
+  background-image:url(images/bg_dandycontentfade.png);
+  background-size:100%;
 }
 
 .dandyaster {background-color: rgb(242, 225, 196);}
+.dandysig {
+    font-size:.75em;
+  font-family: 'Press Start 2P', cursive;
+}
 
 .content::after {
   font-size:.75em;
@@ -210,7 +221,7 @@ blockquote::before {
   text-align:center;
   font-size:.75em;
   font-family: 'Press Start 2P', cursive;
-  color:rgba(0, 0, 0, 0.34);
+  color:red;
   text-decoration: none;
 }
 
@@ -232,7 +243,7 @@ blockquote::before {
 }
 
 .article::first-line {
-  color:rgb(224, 18, 18);
+  color:rgb(128, 114, 96);
   text-transform:uppercase;
 }
 
@@ -277,7 +288,7 @@ iframe {
 
 
 @media (max-width:43em) {
-  .content {
+  .content, .dandyaster {
     width: 90%;
     border:none;
     padding:0;
@@ -314,13 +325,12 @@ iframe {
 .date {
   /* margin:2em 2em; */
   text-transform:uppercase;
-  background-color: rgba(255, 221, 221, 0.4);
-  /* background: linear-gradient(90deg, rgba(255,221,221,1) 0%, rgba(255,255,255,0) 100%); */
+  color:#411213;
+  background-color: rgba(196, 169, 137, .4);
   font-weight:600;
   font-size:0.75em;
   font-family: 'Press Start 2P', cursive;
-  border-right: var(--bg-color) dashed .35em;
-  /* another good red - #d25b5b */
+  border-right: rgba(242, 225, 196, 0.42) dashed .35em;
 }
 
 .date a {
@@ -394,5 +404,5 @@ code::after {content:"]";} */
   }
   
 ::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
-::-webkit-scrollbar-thumb {background: #d25b5b6c;}
-::-webkit-scrollbar-thumb:hover {background: #d25b5b;}
+::-webkit-scrollbar-thumb {background: #978575;}
+::-webkit-scrollbar-thumb:hover {background:rgb(58, 40, 28);}
