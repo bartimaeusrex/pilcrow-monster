@@ -1,6 +1,13 @@
-:root {
+/* :root {
   --bg-color: rgb(248, 245, 242);
-}
+  --clr-bright-text:rgb(223, 11, 11);
+  --clr-text:rgb(8, 8, 8);
+  --clr-introbg:rgb(245, 238, 235);
+  --clr-blogtitle-bg:rgb(250, 234, 232);
+  --clr-xes:rgb(214, 178, 176);
+  --bg-image: url(images/bg_pink2.png);
+  --clr-hilite: rgba(255, 240, 155, 0.2);
+} */
 
 ::selection {
   background: rgba(255, 221, 221, 0.4);
@@ -9,19 +16,18 @@
 
 body {
   margin: 0 1.5em;;
-  font-family: 'EB Garamond', serif;
-  font-size:1em;
+  font-family: var(--font-main);
+  font-size: var(--font-body-size);
   background-color: var(--bg-color);
-  background-image: url(images/bg_dore_londonsky_pink.png);
+  background-image: var(--bg-image);
   background-attachment: fixed;
-  background-blend-mode:multiply;
+  background-blend-mode:var(--blend-mode);
   background-position: bottom;
+  color: var(--clr-text);
 }
 
-
-
 a {
-  color: #070707;
+  color: var(--clr-text);
   text-decoration:none;
   background-color: var(--bg-color);
 }
@@ -33,21 +39,10 @@ a {
   padding:0;
 }
 
-.center-this {
-  margin: 0 auto;
-  text-align:center;
-}
+.center-this {margin: 0 auto;text-align:center;}
+.align-right {margin: 0;margin-right:4em;text-align:right;}
 
-.align-right {
-  margin: 0;
-  margin-right:4em;
-  text-align:right;
-}
-
-img {
-  width:100%;
-  margin:1em 0;
-}
+img {width:100%;margin:1em 0;}
 
 .manicule {
   width:2em;
@@ -69,27 +64,17 @@ img {
 ._1.5em {font-size:1.5em;}
 ._2em {font-size:2em;}
 
-/* PIXEL ANIMATED CROW */
-.pillcrow {
-  margin:0;
-  padding:0;
-  height:1.25em;
-  width:auto;
-}
 
-.stars {
-  height:4em;
-  width:10em;
-  padding-bottom:2em;
-}
+/* PIXEL ANIMATED CROW */
+.pillcrow {margin:0;padding:0;height:1.25em;width:auto;}
+.stars {height:4em;width:10em;padding-bottom:2em;}
 
 /* FOR INLINE PARAGRAPHS */
-.pilcrow {color:rgb(224, 18, 18);}
+.pilcrow {color:var(--clr-firstline);}
 .pilcrow::before {content:" ¶ ";}
 
-p {margin:.5em 0 0 0;}
-
-blockquote {color:#752626;}
+p {margin:.5em 0 0 0;text-wrap:pretty;}
+blockquote {color: #752626;}
 
 .no-firstline-indent {text-indent:0;}
 
@@ -141,7 +126,7 @@ blockquote::before {
 }
 
 #title, #title a {
-  color:rgba(223, 11, 11);
+  color:var(--clr-bright-text);
   font-family: 'Press Start 2P', cursive;
   font-size:1.25rem;
   text-decoration: none;
@@ -162,6 +147,10 @@ blockquote::before {
   content: "¶.MONSTER/";
 }
 
+/* #title.horizontal-shake:hover {
+  animation: horizontal-shaking 0.35s infinite;
+} */
+
 .description {
   font-family: 'Press Start 2P', cursive;
   font-size:.6em;
@@ -173,7 +162,7 @@ blockquote::before {
   color:#0000006e;
   border:1px dashed #00000023;
   border-radius:20px;
-  background-color: #d25b5b09;
+  background-color: var(--clr-introbg);
 }
 
 .content, .dandyaster {
@@ -186,7 +175,7 @@ blockquote::before {
   border-top:0;
   border-radius:20px 20px 0 0;
   /* border-right:1px solid #75262621; */
-  background-color: var(--bg-color);
+  background-color: var(--clr-content-bg);
 }
 
 .dandyaster {background-color: rgb(242, 225, 196);}
@@ -194,7 +183,7 @@ blockquote::before {
 .content::after {
   font-size:.75em;
   font-family: 'Press Start 2P', cursive;
-  content:"© reinhart mmxxv";
+  content:"© reinhart mmxxvi";
 }
 
 /* .content a {
@@ -221,23 +210,10 @@ blockquote::before {
 }
 
 .highlighter::after {content:" ➹"}
-
-.hilite {
-  background-color: rgba(255, 240, 155, 0.2);
-}
-
-.article {
-  text-indent:1.25em;
-
-}
-
-.article::first-line {
-  color:rgb(224, 18, 18);
-  text-transform:uppercase;
-}
-
+.hilite {background-color: rgba(255, 240, 155, 0.2);}
+.article {text-indent:1.25em;}
+.article::first-line {color:var(--clr-bright-text);text-transform:uppercase;}
 .firstpara::before {content:"¶ ";}
-
 p.firstpara {text-indent:0;}
 
 .month, .year {
@@ -249,10 +225,7 @@ p.firstpara {text-indent:0;}
   text-align:center;
 }
 .month::after, .month::before {content:" ×———× "}
-.year {
-  font-size:1.5em;
-  color:rgba(161, 71, 71, 0.384);
-}
+.year {font-size:1.5em;color:rgba(161, 71, 71, 0.384);}
 
 .year::after, .year::before {content:" × "}
 
@@ -265,40 +238,23 @@ p.firstpara {text-indent:0;}
 .Dropdown:hover{
   transition: all 0.5s ease-out;
 }
-.Dropdown:hover::before{color:red; content:"🡇 ";}
-.Dropdown:hover::after{color:red; content:" 🡇";}
+.Dropdown:hover::before{color:var(--clr-bright-text); content:"🡇 ";}
+.Dropdown:hover::after{color:var(--clr-bright-text); content:" 🡇";}
 
 
 
-iframe {
-  /* aspect-ratio:16 / 9; */
-  width:100%;
-}
 
+iframe {/* aspect-ratio:16 / 9; */width:100%;}
 
 @media (max-width:43em) {
-  .content {
-    width: 90%;
-    border:none;
-    padding:0;
-  }
-
-  body {
-    background: none;
-    background-color: var(--bg-color);
-  }
-
-  #title {
-    margin:0 auto 2em auto;
-  }
+  .content {width: 90%;border:none;padding:0;}
+  body {background: none;background-color: var(--bg-color);}
+  #title {margin:0 auto 2em auto;}
 }
 
 @media (max-width:500px) {
   .month {font-size:.9em;}
-  .month::after, .month::before {
-    content:" × "
-  }
-}
+  .month::after, .month::before {content:" × "}}
 
 .inwhich {
   margin:1em auto 0 auto;
@@ -307,9 +263,7 @@ iframe {
   font-style:italic;
 }
 
-.inwhich::first-line {
-  text-transform:capitalize;
-}
+.inwhich::first-line {text-transform:capitalize;}
 
 .date {
   /* margin:2em 2em; */
@@ -323,29 +277,16 @@ iframe {
   /* another good red - #d25b5b */
 }
 
-.date a {
-  background-color: red;
-}
-
-.blurb {
-  margin-bottom:2em;
-}
-
-.blurb::after {
-  content:"";
-  font-size:1rem;
-}
+.date a {background-color: red;}
+.blurb {margin-bottom:2em;}
+.blurb::after {content:"";font-size:1rem;}
 
 a .blurb {
   text-decoration:none;
   background-color: var(--bg-color);
 }
 
-.asterism {
-  text-align:center;
-  margin-bottom:1em;
-}
-
+.asterism {text-align:center;margin-bottom:1em;}
 .asterism::after {content:"⁂";}
 
 .fleuron {
@@ -355,17 +296,13 @@ a .blurb {
 }
 
 .fleuron::after {content:"❦";}
-
 .textred {color:red;}
 
-.logo_pm {
-  height:3em;
-  width:3.01em;
-}
+.logo_pm {height:3em;width:3.01em;}
 
 code {
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
+  border: 1px solid va(--clr-text);
   padding:.25em .5em;
   box-shadow: 2px 2px 2px #07070734;
   border-radius: 3px;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="egMm4819SpE1"
+   viewBox="0 0 12.2519 15"
+   shape-rendering="geometricPrecision"
+   text-rendering="geometricPrecision"
+   project-id="63b4af966626456ea00b890501785166"
+   export-id="bed65ce5ab434927b07e66190aa1ba45"
+   cached="false"
+   version="1.1"
+   sodipodi:docname="arrow_down.svg"
+   width="12.2519"
+   height="15"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.9983453"
+     inkscape:cx="59.598618"
+     inkscape:cy="73.621822"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="egMm4819SpE1" />
+  <path
+     d="M 2.8625942,0 H 9.3893048 V 8.7595463 H 12.2519 L 5.925568,15 0,8.7595463 h 2.8625942 z"
+     fill="#d2dbed"
+     stroke-width="0"
+     id="path1" />
+  <path
+     style="opacity:0.853;fill:#ff0000;stroke-width:0.0333949;stroke-linecap:square;stroke-linejoin:round;paint-order:markers stroke fill"
+     d="M 2.9728907,11.876378 0.03487167,8.778702 1.4513322,8.772252 2.8677929,8.765802 V 4.3828827 0 H 6.123802 9.3798113 v 4.3828827 4.3828826 l 1.4182917,0.00645 1.418292,0.00645 -3.136091,3.0932087 c -1.7248504,1.701265 -3.1435845,3.095218 -3.152743,3.097675 -0.00916,0.0025 -1.3387601,-1.389487 -2.9546703,-3.093208 z"
+     id="path2" />
+</svg>

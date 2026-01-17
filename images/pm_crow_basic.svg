@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96.928574mm"
+   height="67.850075mm"
+   viewBox="0 0 96.928574 67.850075"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="pm_crow_basic.svg"
+   inkscape:export-filename="pm_crow_basic.png"
+   inkscape:export-xdpi="1179.2189"
+   inkscape:export-ydpi="1179.2189"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#ededed"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.6450534"
+     inkscape:cx="183.17211"
+     inkscape:cy="128.3528"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-56.201661,-229.14996)">
+    <g
+       id="g33">
+      <rect
+         style="fill:#f9f9f9;stroke:none;stroke-width:0.240639;stroke-linecap:round;stroke-opacity:0.0222222;paint-order:stroke markers fill"
+         id="rect14"
+         width="9.6928577"
+         height="9.6928577"
+         x="94.973083"
+         y="238.8428" />
+      <path
+         id="rect18"
+         style="stroke-width:0.31334;stroke-linecap:round;stroke-opacity:0.0222222;paint-order:stroke markers fill"
+         d="m 104.66595,230.62567 h 9.69285 v 16.43429 h -9.69285 z m -19.385722,4.84642 h 9.692857 v 16.43429 h -9.692857 z m 19.385712,17.91001 v -9.69286 h 38.77142 v 9.69286 z m -38.771432,19.38572 v -9.69286 h 48.464302 v 9.69286 z m 29.078583,-14.53927 h 9.692859 V 297 H 94.973091 Z M 75.587379,244.60924 h 9.692858 v 52.39077 H 75.587379 Z M 56.20166,272.76785 h 9.692858 v 14.5393 H 56.20166 Z m 0,-4.84643 h 58.15714 v 9.69286 H 56.20166 Z m 9.692856,-13.0636 h 58.157144 v 13.06359 H 65.894516 Z m 77.542864,-1.47569 h 9.69286 v 14.53928 h -9.69286 z m -77.542864,-4.84644 h 87.235714 v 9.69286 H 65.894516 Z m 38.771424,-9.69289 h 38.77143 v 9.69286 h -38.77143 z m -29.078568,0 h 19.385715 v 9.69286 H 75.587372 Z m 9.692856,-9.69285 H 114.3588 v 9.69286 H 85.280228 Z" />
+    </g>
+  </g>
+</svg>

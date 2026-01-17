@@ -1,0 +1,88 @@
+/* Following is edited from: https://codepen.io/kevinpowell/pen/MWXybWJ */
+
+:root {
+  --font-main: 'EB Garamond', serif;
+  --font-body-size:1em;
+  --bg-color: rgb(248, 245, 242);
+  --clr-bright-text:rgb(223, 11, 11);
+  --clr-text:rgb(8, 8, 8);
+  --clr-introbg: #d25b5b09;
+  --clr-blogtitle-bg:rgb(250, 234, 232);
+  --clr-xes:rgb(214, 178, 176);
+  --bg-image: url(images/bg_pink2.png);
+  --clr-hilite: rgba(255, 240, 155, 0.2);
+  --blend-mode: none;
+  --clr-content-bg: rgb(248, 245, 242);
+  --img-content-bg: none;
+}
+
+.visually-hidden {
+  /* clip: rect(0 0 0 0);
+  clip-path: inset(50%); */
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.color-picker > fieldset {
+  border: 0;
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  background: #fff;
+  padding: 1rem 3rem;
+  margin-inline: auto;
+  border-radius: 2rem;
+}
+
+.color-picker input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: 3px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.color-picker input[type="radio"]:checked {background-color: var(--radio-color);}
+.color-picker input[type="radio"]#pink {--radio-color: #fbebe9;}
+.color-picker input[type="radio"]#matrix {--radio-color: #00e244;}
+.color-picker input[type="radio"]#coffee {--radio-color: #5e3726ff;}
+
+:root:has(#pink:checked), .pink {
+  --clr-body-bg: hsl(310 50% 90%);
+  --clr-card-bg: hsl(310 50% 100%);
+  --clr-text: hsl(310 50% 15%);
+  --clr-heading: hsl(310 50% 25%);
+  --clr-content-bg:rgb(247, 245, 242);
+}
+
+:root:has(#matrix:checked), .matrix {
+  --font-main:'Press Start 2P', cursive;
+  /* --font-body-size:.75rem; */
+  --bg-color: black;
+  --clr-content-bg: black;
+  --clr-bright-text: #00e244;
+  --clr-text: #00e244;
+  --clr-introbg:rgba(255, 255, 255, 1);
+  --clr-blogtitle-bg:rgba(255, 255, 255, 1);
+  --clr-xes: #00e244;
+  --bg-image: url(images/bg_matrix2.png);
+  --clr-hilite: #00e244;
+}
+
+:root:has(#coffee:checked), .coffee {
+  --bg-color: rgb(181, 172, 159);
+  --clr-bright-text:rgb(223, 11, 11);
+  --clr-text:rgb(8, 8, 8);
+  --clr-introbg:rgb(245, 238, 235);
+  --clr-blogtitle-bg:rgb(250, 234, 232);
+  --clr-xes:rgb(214, 178, 176);
+  --bg-image: url(images/bg_coffee.png);
+  --clr-hilite: rgba(255, 240, 155, 0.2);
+  --blend-mode: multiply;
+  --img-content-bg: url(images/bg_dandycontentfade.png);
+}
+
