@@ -14,6 +14,10 @@
   color: #441a15;
 }
 
+#display {
+  display:inline-block;
+}
+
 body {
   margin: 0 1.5em;;
   font-family: var(--font-main);

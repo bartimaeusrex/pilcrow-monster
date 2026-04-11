@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <pm-headerinfo></pm-headerinfo>
+
+  <script defer src="PMHeaderInfo.js"></script>
+  <script defer src="PMSignature.js"></script>
+  <script defer src="PMFooter.js"></script>
+
+  <title>¶.Monster/2026 April 11: Hardly Working</title>
+</head>
+
+<body>
+  <a href="./"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE --></p></a>
+  
+<!--
+</p><p>
+-->
+
+  <section class="content">
+    <div class="date">2026 April 11: Hardly Working</div>
+    <div class="inwhich">In which I expend much effort to create something that will only marginally improve efficiency, and in the end may be just as much or more work as before.</div>
+    <div class="fleuron"></div>
+    <div class="article">
+    <p class="firstpara">
+      Working hard or hardly working. Or are you working hard, to enable you to hardly (need to) work later? I have heard the argument that this is essentially the driving force behind human endeavor. The first time I came across the idea was probably in Terry Pratchett, but it's also likely a much older observation. We expend so much energy, time, and resources into building things (products, supposedly society) that are more and more efficient, so that in the long run we do not have to work so hard... and then capitalism happens, and the work only gets harder for less return, and so forth and so on... Um. This post is not going to be going quite so deep into the weeds of societal structure and politics. Nah.
+   </p><p>
+    To paraphrase Chris Barron of The Spin Doctors: <em>I'm not lazy, nah! nah! I'm just anxious! anxious! anxious!</em>
+   </p><p>
+      No, the issue came up for me when considering how little I post here (and to my other bookish blog). It's not that I don't still write, not that I don't have half a dozen or more posts mostly ready to go and ideas to expound upon, it's just the littlest stumbling blocks that get in the way. Kind of like driving was for me, for twenty odd years. How, then, to go about removing those little blocks. How then can I nimbly hop over them.
+    </p><p>
+      One thing I learned hard with trying, amateurly, to promote the online bookstore I used to work at, is that users need the least friction to do what you want them to do. To take action and buy that book. To leave us a review. Make it SO EASY they can't HELP but complete the purchase, write a quick review. ANY extra clicks to get from one place to the next can be fatal. One extra click to one extra webpage can destroy a sale. It's not because people are lazy: it's more that people are so easily distracted on the internet, and there is always a dozen other things clamoring for their attention.
+    </p><p>
+      Is that the same as cognitive load? Either way, I think my stumbling blocks are. With Wordpress, you have a lovely UI to work with, write your post, press the button and it's live on your blog. You can do other things like add SEO keywords, assign the post to go under such and such a section, whatever, but your basic plain text post is easy. Very few steps. With this blog I have intentionally made it from the ground up--that's what I WANT--but that does mean there are extra steps involved.
+    </p><p>
+      What are my stumbling blocks? What are my steps? First write the article, edit it. I made myself a template HTML file for posts. And mostly I just have to copy and paste my article from Google Docs into it, and then add some <code>&#60;/p&#62;&#60;p&#62;</code> tags (yes I know that looks backwards, but in the template the first paragraph will already have an opening tag). And then I need to add some basic styling, if needed, like italics or bold text. Add an image or two if I think it's needed. And then I have to update the home page to include a link and the "In which" snippet. And finally I have to go through GitHub and upload the files. That's not ACTUALLY that many steps, really. I guess I don't do it regularly enough that I can do those things without thinking? where my fingers just do those things without involving my brain?
+    </p><p>
+      I'm doing something different with this article/train-of-thought. I'm writing it directly into a new HTML file based on the template. The reason I've been using Google Docs is because it's easier to write those on my phone. I haven't found a way to access and compose HTML on my phone, or at least not in a way that's not super frustrating. For such things I like a big screen, openness.
+    </p><p>
+      But now I am finally coming to the crux of this post.
+    </p><p>
+      I had the thought recently that it shouldn't be so hard to find a little Javascript, or fancy CSS, so I could build a webpage to just write copy/paste my article, press a button to output or copy the HTML, all basically formatted (any italicizing or bolding or whatever would have to be done manually). Turns out it's not quite so simple. I DID come up with a decent <a href="505" class="highlighter">rough-and-tumble solution</a> where I had to convert all the HTML tags into text that the browser doesn't read as HTML, and create some input boxes and textareas. And then I can copy and paste the whole thing.
+    </p><p>
+      But wouldn't it be nice to just have a button that will copy all of that for me? I found the relevant Javascript, but low and behold it stops working the moment you put input boxes and textareas, i.e., the most important things.
+    </p><p>
+      Damn. Well. I'm not about to learn how to create myself a whole-ass UI for creating posts, that would be absurd. Maybe something already exists that would serve my needs but so far my searches haven't come up with anything. Maybe if I were as enterprising a blogger as all that I WOULD teach myself how to build a whole-ass UI to serve my needs, and document that journey. I am not that enterprising.
+    </p><p>
+      One super interesting thing about all human endeavors and achievements, something that I have found true for myself in the smallest of issues, is that so often the actual solution is SUPER SIMPLE. This is something I've found with design work. My process tends to be getting excited about a project, working it and pushing it so it's an absolute mess, worked to death, and then I break: FUCK THIS SHIT. I wipe the slate clean, focus on the few things that actually appear relevant and work well, and go from there. This was one frustration of Wordpress: for certain capabilities you'd have to install a plugin, possibly subscription based, and keep it maintained. These plugins can mess with all sorts of aspects of your website, and can cause it to crash entirely. When it crashes, you don't always know which plugin caused it, either. Pain in the ass.
+    </p>
+    <br />
+    <div class="asterism"></div>
+    <p class="firstpara">
+      The ultimate question then becomes what is the simplest solution with the least amount of friction involved? I have two thoughts on this: 1) I simplify my <a href="505" class="highlighter">rough-and-tumble solution</a> so that it's maybe only ONE SINGLE textarea, with some basic templating stuff already added in--this way I'd only have one textblock to copy and paste into one area of the HTML template--or 2) maybe the manual way I've been doing things is actually the simplest and most frictionless process? Even with any sort of templating situation, I'll have to deal with GitHub. I'll have to edit the home page. If I really wanted so much efficiency, wouldn't I just go back to Wordpress or Squarespace? or Livejournal...?
+    </p><p>
+      As with so many little things in life, it largely comes down to spending just that tiny amount of extra time and effort to finish that task you're procrastinating on. Stuff that's so easy to just get down and do in a work environment, where there's oversight and expectations, and far, far fewer distractions. For some reason that becomes anxiety-inducing at home. And of course I have learned that anxiety is just the anticipation of the thing and thus really serves no good purpose in these situations. Maybe it's me, maybe <strike>it's Maybelline</strike> I need some meds(alline).
+    </p><p>
+      Either way, I do want to post more often, even if I only have an audience of one. Maybe I'll focus on posts and then leave updating the homepage for later, ... maybe this; or that... maybe the other...
+    </p>
+
+    
+    <pm-signature></pm-signature>
+  </div><!-- END ARTICLE DIV -->
+    <pm-footer></pm-footer>
+  </section>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <pm-headerinfo></pm-headerinfo>
+
+  <script defer src="PMHeaderInfo.js"></script>
+  <script defer src="PMSignature.js"></script>
+  <script defer src="PMFooter.js"></script>
+
+
+
+
+<script>
+  const copyButtons = document.querySelectorAll("[data-copy^='pre']");
+copyButtons.forEach((button) => {
+  button.disabled = false;
+  const codeId = button.dataset.copy;
+  button.addEventListener("click", () => {
+    navigator.clipboard.writeText(
+      document.getElementById(codeId).textContent,
+    );
+  });
+});
+
+navigator.clipboard.writeText(
+  document.getElementById(codeId).textContent,
+).then(() => {
+  button.textContent = "Copied!";
+});
+</script>
+
+
+
+
+  <style>
+[data-copy^='pre'] {
+  &:disabled {
+    display: none;
+  }
+}
+    /* span {color:red;} */
+    /* pre {width:90%;border:1px black solid;padding:1em;} */
+    /* input {width:80%;} */
+  </style>
+
+  <title>¶.Monster/505 Form Play Ground</title>
+</head>
+
+<body>
+  <a href="./"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE --></p></a>
+  
+  <section class="content">
+    <div class="date">505 Form Play Ground</div>
+    <div class="inwhich">In which you've just stumbled onto a testground for templating posts here on this website.</div>
+    <div class="fleuron"></div>
+
+
+
+<!--   SPECIFICALLY RIGHT HERE, RIGHT NOW. RECREATING THE ACTUAL HTML OF THIS WEBSITE!!!!!!!!!!!!!!    -->
+<pre id="mypost">
+&#60;!DOCTYPE html&#62;
+&#60;html lang="en"&#62;
+
+&#60;head&#62;
+  &#60;meta charset="UTF-8"&#62;
+  &#60;link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"&#62;
+
+  &#60;pm-headerinfo&#62;&#60;/pm-headerinfo&#62;
+
+  &#60;script defer src="PMHeaderInfo.js"&#62;&#60;/script&#62;
+  &#60;script defer src="PMSignature.js"&#62;&#60;/script&#62;
+  &#60;script defer src="PMFooter.js"&#62;&#60;/script&#62;
+
+  &#60;title&#62;¶.Monster/<!--TITLE <span id="display"></span>--><input type="text" name="title" width="100%">&#60;/title&#62;
+
+  &#60;/head&#62;
+
+&#60;body&#62;
+  &#60;a href="./"&#62;&#60;p id="title"&#62;&#60;!-- #TITLE::AFTER TEXT IN CSS FILE --&#62;&#60;/p&#62;&#60;/a&#62;
+  
+  &#60;section class="content"&#62;
+    &#60;div class="date"&#62;<input type="text" name="title">&#60;/div&#62;
+    &#60;div class="inwhich"&#62;In which <input type="text" name="inwhich">&#60;/div&#62;
+    &#60;div class="fleuron"&#62;&#60;/div&#62;
+    &#60;div class="article"&#62;
+    &#60;p class="firstpara"&#62;
+      <textarea type="text" name="firstpara" rows="10" cols="60">First paragraph</textarea>
+    &#60;/p&#62;&#60;p&#62;
+      <textarea type="text" name="para" rows="10" cols="60"></textarea>
+    &#60;/p&#62;
+    &#60;br /&#62;
+    &#60;div class="asterism"&#62;&#60;/div&#62;
+    &#60;p class="firstpara"&#62;
+      <textarea type="text" name="firstconcludingpara" rows="10" cols="60">First concluding paragraph</textarea>
+    &#60;/p&#62;&#60;p&#62;
+      <textarea type="text" name="para" rows="10" cols="60"></textarea>
+    &#60;/p&#62;
+    &#60;pm-signature&#62;&#60;/pm-signature&#62;
+  &#60;/div&#62;&#60;!-- END ARTICLE DIV --&#62;
+    &#60;pm-footer&#62;&#60;/pm-footer&#62;
+  &#60;/section&#62;
+
+
+&#60;/body&#62;
+&#60;/html&#62;
+</pre>
+
+<button data-copy="mypost">Copy Code</button>
+
+<br /><br /><br />
+    <pm-footer></pm-footer>
+  </section>
+
+
+</body>
+</html>
