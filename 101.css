@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  row-gap: 1rem;
+  place-items: center;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  
+  @media (width >= 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  textarea, div {
+    aspect-ratio: 2/1;
+    border: 1px solid #000;
+    overflow-y: scroll;
+    max-block-size: 60vh;
+    width: 80vw;
+    
+    @media (width >= 700px) {
+      aspect-ratio: 1;
+      width: 40vw;
+    }
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+  }
+  
+  img {
+    max-inline-size: 100%;
+  }
+}
