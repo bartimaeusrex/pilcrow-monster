@@ -293,16 +293,17 @@ a .blurb {
 .asterism {text-align:center;margin-bottom:1em;}
 .asterism::after {content:"⁂";}
 
-.fleuron {
-  text-align:center;
-  margin:1em 0;
-  font-size:1em;
-}
+.silcrow {text-align:center;margin-bottom:1em;}
+.silcrow::after {content:"§";}
 
+.fleuron {text-align:center;margin:1em 0;font-size:1em;}
 .fleuron::after {content:"❦";}
+
 .textred {color:red;}
 
 .logo_pm {height:3em;width:3.01em;}
+
+.smallcaps{font-variant: small-caps;}
 
 code {
   background-color: rgb(255, 255, 255);
