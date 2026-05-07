@@ -338,3 +338,54 @@ code::after {content:"]";} */
 ::-webkit-scrollbar-track {border: 1px solid #ffffff00;}
 ::-webkit-scrollbar-thumb {background: #d25b5b6c;}
 ::-webkit-scrollbar-thumb:hover {background: #d25b5b;}
+
+
+
+/* INK / INKY INKLE STYLINGS BELOW */
+
+/*
+  Class applied to all choices
+  (Will always appear inside <p> element by default.)
+*/
+.choice {
+    text-align: center;
+    line-height: 1.7em;
+}
+
+/* 
+  Class applied to first choice
+*/
+:not(.choice)+.choice {
+    padding-top: 1em;
+}
+
+/*
+  Class applied to choice links
+*/
+.choice a, .choice span {
+    font-size: 15pt;
+}
+
+/* 
+  Built-in class:
+    The End # CLASS: end
+*/
+.end {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* #controls {
+    z-index: 4;
+    font-size: 9pt;
+    text-align: center;
+    padding-bottom: 6px;
+    position: fixed;
+    right: 14px;
+    top: 4px;
+    user-select: none;
+    background: white;
+} */
