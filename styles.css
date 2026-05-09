@@ -350,6 +350,8 @@ code::after {content:"]";} */
 .choice {
     text-align: center;
     line-height: 1.7em;
+    border:1px solid black;
+    padding:1em;
 }
 
 /* 
@@ -363,7 +365,7 @@ code::after {content:"]";} */
   Class applied to choice links
 */
 .choice a, .choice span {
-    font-size: 15pt;
+    font-size: 1em;
 }
 
 /* 
