@@ -14,9 +14,7 @@
   color: #441a15;
 }
 
-#display {
-  display:inline-block;
-}
+#display {display:inline-block;}
 
 body {
   margin: 0 1.5em;;
@@ -343,6 +341,15 @@ code::after {content:"]";} */
 
 /* INK / INKY INKLE STYLINGS BELOW */
 
+.buttons {
+  font-family: 'Press Start 2P', cursive;
+  font-size:.75rem;
+  cursor: pointer;
+}
+
+#rewind:hover, #save:hover, #reload:hover {
+  color:red;
+}
 /*
   Class applied to all choices
   (Will always appear inside <p> element by default.)
@@ -350,8 +357,14 @@ code::after {content:"]";} */
 .choice {
     text-align: center;
     line-height: 1.7em;
-    border:1px solid black;
+    border:1px #d25b5b dashed;
+    border-radius:5px;
     padding:1em;
+}
+
+.choice:hover{
+  color:#d25b5b;
+  border:1px solid black;
 }
 
 /* 
