@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <pm-headerinfo></pm-headerinfo>
+
+
+    <title>2026 May 20: Further Ink Experiments</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="PMManicule.js"></script>
+    <script defer src="PMSignature.js"></script>
+    <script defer src="PMFooter.js"></script>
+    <script defer src="PMDownArrow.js"></script>
+    <script defer src="PMHeaderInfo.js"></script>
+    <script>
+      var hello = ["Hello! ", "Howdy! ", "Greetings! "], bg = ["images/bg_halftone_opac15.png", "images/dore_dante_daywasdeparting.png", "images/reinhart_duckling.jpg"], arr3 = ["g", "h", "i"];
+
+      function showRandomFrom(chosenArray){
+      document.getElementsByClassName("greeting")[0].innerHTML = chosenArray[Math.floor(Math.random() * chosenArray.length)];
+        }
+    </script>
+</head>
+
+<body onload="showRandomFrom(hello);">
+    <a href="./"><p id="title"><!-- #TITLE::AFTER TEXT IN CSS FILE --></p></a>
+
+    <section class="content">
+    <div class="date">2026 May 20: Further Ink Experiments</div>
+    <div class="inwhich"><a class="greeting"></a> In which I see if I can just do a tiny little inconsequential bit of text that would be written in Tracery-style inkscript. Is it possible??</div>
+    <div class="fleuron"></div>
+
+<!-- Interestingly, this does work BUT! The random choices seem to be saved in a cookie or something because they stay the same even if you refresh the page. If I edit the actual .js file, it will pick new choices, but only with the vocab that I've changed: so I added a name, which means a new name was chosen, but the animal stayed the same. But if I have a restart button???? IT WORKS TO CLICK ON THE RESTART BUTTON -->
+    <div class="outerContainer">
+      <div id="story" class="container"></div>
+        <a id="rewind"> ↻ </a><a id="save"></a><a id="reload"></a>
+    </div>
+
+
+
+    <div class="article">
+
+    <!-- DO I ABSOLUTELY NEED THE CONTROLS??? LOAD seems to be essential...
+     So they seem to be, but I can just take the text away, and BAM! DONE!
+      
+    <div class="outerContainer">
+      <div id="story" class="container"></div>
+    </div>
+    <br />
+        <div id="controls" class="buttons center-this">
+          <a id="rewind" title="Restart story from beginning">RESTART</a> | 
+          <a id="save" title="Save progress">SAVE</a> | 
+          <a id="reload" title="Reload from save point">LOAD</a>
+        </div> -->
+
+    
+    <pm-signature></pm-signature>
+  </div><!-- END ARTICLE DIV -->
+    <pm-footer></pm-footer>
+  </section>
+
+    <script src="ink.js"></script>
+    <!-- <script src="20260520.js"></script> -->
+    <script src="tracery_snippet.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

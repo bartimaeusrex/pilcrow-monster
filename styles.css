@@ -212,6 +212,7 @@ blockquote::before {
 }
 
 .highlighter::after {content:" ➹"}
+.highlighter:hover::after {content:" ➼"}
 .hilite {background-color: rgba(255, 240, 155, 0.2);}
 .article {text-indent:1.25em;}
 .article::first-line {color:var(--clr-bright-text);text-transform:uppercase;}
@@ -340,6 +341,13 @@ code::after {content:"]";} */
 
 
 /* INK / INKY INKLE STYLINGS BELOW */
+
+/* my thing to try to delineate where the response is, otherwise it's a little tricky to determine where the answer to a choice actually beings. I don't have to specify ::first-line because border-top is doing the same thing!! */
+.ink-answer {
+  border-top:1px #d25b5bad dashed;
+  padding-top:.5em;
+}
+
 
 .buttons {
   font-family: 'Press Start 2P', cursive;
